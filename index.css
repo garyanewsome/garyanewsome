@@ -1,0 +1,53 @@
+header, main, nav, footer, section, article, figure, figcaption, aside { display: block; }
+
+#wrapper {	margin: 0 auto;
+						top: 0;
+          	width: 80%;
+          }
+
+#edu	{	padding: 25px;
+				background-color: #DDDDDD;
+}
+
+#edu a:hover {	color: #0000FF;
+								font-style: italic;
+								padding-left: 5px;}
+
+#savvy	{
+	padding: 25px;
+	background-color: #DDDDDD;
+	text-align: right;
+}
+
+body {	background-color: #DDDDDD;
+				}
+
+header {	padding: 10px;
+					text-align: center;
+					font-family: 'Crushed', Georgia, serif;
+					color: #333333;
+				}
+
+header h2 { font-family: 'Crushed', Georgia, serif;
+					}
+			
+main {	padding: 10px;
+				overflow: auto;
+				margin-left: 20px;
+				margin-right: 20px;
+				padding-right: 20px;
+				color: #333333;
+			}
+
+a, a:visited { color: #0000FF;}
+a:hover {	color: #0000FF;}
+
+h1 {font-size: 4em;	}
+
+
+footer {	text-align: center; 
+		font-size: 1em;
+		padding: 10px;
+		margin-left: 20px; 
+		margin-right: 20px; }
+
