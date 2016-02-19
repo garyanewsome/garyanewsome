@@ -1,9 +1,10 @@
+@charset "utf-8";
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
 header, main, nav, footer, section, article, figure, figcaption, aside { display: block; }
 
-#wrapper {	margin: 0 auto;
-						top: 0;
-          	width: 80%;
-          }
 
 #edu	{	padding: 25px;
 				background-color: #DDDDDD;
@@ -19,14 +20,19 @@ header, main, nav, footer, section, article, figure, figcaption, aside { display
 	text-align: right;
 }
 
-body {	background-color: #DDDDDD;
-				}
+body {	@include outer-container;
+		background-color: #DDDDDD;
+		}
 
-header {	padding: 10px;
-					text-align: center;
-					font-family: 'Crushed', Georgia, serif;
-					color: #333333;
-				}
+header {	@include span-columns(12 of 12);
+			padding: 10px;
+			text-align: center;
+			font-family: 'Crushed', Georgia, serif;
+			color: #333333;
+			}
+
+#title	{ @include span-columns(8 of 12);}
+#contact	{	@include span-columns(4 of 12);}
 
 header h2 { font-family: 'Crushed', Georgia, serif;
 					}
