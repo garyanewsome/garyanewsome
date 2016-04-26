@@ -5,23 +5,8 @@
 
 header, main, nav, footer, section, article, figure, figcaption, aside { display: block; }
 
-
-#edu	{	padding: 25px;
-				background-color: #DDDDDD;
-}
-
-#edu a:hover {	color: #0000FF;
-								font-style: italic;
-								padding-left: 5px;}
-
-#savvy	{
-	padding: 25px;
-	background-color: #DDDDDD;
-	text-align: right;
-}
-
-body {	@include outer-container;
-		background-color: #DDDDDD;
+body	{	@include outer-container;
+			background-color: #DDDDDD;
 		}
 
 header {	@include span-columns(12 of 12);
@@ -29,31 +14,56 @@ header {	@include span-columns(12 of 12);
 			text-align: center;
 			font-family: 'Crushed', Georgia, serif;
 			color: #333333;
+		}
+
+header h2 	{ font-family: 'Crushed', Georgia, serif;
 			}
-
-#title	{ @include span-columns(8 of 12);}
-#contact	{	@include span-columns(4 of 12);}
-
-header h2 { font-family: 'Crushed', Georgia, serif;
-					}
 			
-main {	padding: 10px;
-				overflow: auto;
-				margin-left: 20px;
-				margin-right: 20px;
-				padding-right: 20px;
-				color: #333333;
-			}
+main 	{	padding: 10px;
+			overflow: auto;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding-right: 20px;
+			color: #333333;
+		}
 
-a, a:visited { color: #0000FF;}
-a:hover {	color: #0000FF;}
+main a:hover 	{	color: #0000FF;
+					font-style: italic;
+					padding-left: 5px;
+				}
+
+main a:visited { color: #0000FF;}
 
 h1 {font-size: 4em;	}
 
-
 footer {	text-align: center; 
-		font-size: 1em;
-		padding: 10px;
-		margin-left: 20px; 
-		margin-right: 20px; }
+			font-size: 1em;
+			padding: 10px;
+			margin-left: 20px; 
+			margin-right: 20px; }
+
+#banner	{@include span-columns(8);}
+#contact {@include span-columns(4);}
+
+#edu	{	@include span-columns(12);
+			padding: 25px;
+			background-color: #FFFFFF;
+			color: #005627;}
+
+#savvy	{	@include span-columns(12);
+			padding: 25px;
+			background-color: #B7B7B7;
+			color: #000048;
+			}
+
+#woss	{	@include span-columns(12);
+padding: 25px;
+			background-color: #FFFFFF;
+			color: #2E4056;}
+
+.pic{@include span-columns(3)};
+.info{@include span-columns(9)};
+
+.pic, .info, .banner, .contact	{	@media screen and (max-width: 768px){
+						@include span-columns(12 of 12);}}
 

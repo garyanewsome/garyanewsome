@@ -8,7 +8,7 @@
 <meta name="description" content="">
 <link rel="icon" href=".ico" type="image/x-icon"> <!-- favicon -->
 <link rel="shortcut icon" href=".ico" type="image/x-icon"> <!-- favicon -->
-<link href="index.css" rel="stylesheet">
+<link href="stylesheets/index.css" rel="stylesheet">
 
 <!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
@@ -24,40 +24,42 @@
 
 <body>
 	<header>
-		<h1>Gary A. Newsome</h1>
-		<h2>contact: <a href="https://twitter.com/garyanewsome" target="_blank">@garyanewsome</a><br>
-			  LinkedIn: <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">Gary A. Newsome</a></h2>
+		<div id="banner"><h1>Gary A. Newsome</h1></div>
+		<div id="contact"><h2>contact: <a href="https://twitter.com/garyanewsome" target="_blank">@garyanewsome</a><br>
+			  LinkedIn: <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">Gary A. Newsome</a></h2></div>
 	</header>
 	<nav>
 	</nav>
 
 	<main>
 		<div id="edu">
-			<!-- float small image left as icon/bullet point
-			get official titles of the degrees/certs direct link to them? -->
 			<br>
-			<img src="images/wcccnew.png" alt="WCCC" style="float:left; padding:5px 15px 5px 5px; width:200px; height:46px;">
+			<div class="pic"><br><img src="images/wcccnew.png" alt="WCCC" style="padding:5px 15px 5px 5px; width:200px; height:46px;"></div>
+			<div class="info">
 			<p>Student of Computer Science at <a href="https://wccc.edu">Westmoreland County Community College</a><br>
-				Studying for Associates degree in:<br>
+				Studying for Associates degree in:
 				<a href="https://wccc.edu/pages/future-students/academic-programs/computer-information-systems/computer-technology/programming-for-the-enterprise/" target="_blank">Computer Information Systems - Programming for the Enterprise</a><br>
-			<p>Phi Theta Kappa Honors Society</p>
-		</div><!-- end edu div -->
-		<div id="edu">
-			<!-- float small image right as icon/bullet point
-			get official titles of the degrees/certs direct link to them? -->
-			<img src="images/wccc.png" alt="WCCC" style="float: left; padding:5px 15px 5px 5px; width:150px; height:150px;">
-			<p>Intern at<br>
-				<h4>SavvySoftWorks</h4><br>
-				Focus on building and deploying Web Apps<br>
-				With JavaScript and Ruby on Rails<br>
-		</div><!-- end edu div -->
-				<div id="edu">
-			<!-- float small image left as icon/bullet point
-			get official titles of the degrees/certs direct link to them? -->
+			<p>Phi Theta Kappa Honors Society<br>
+			   GPA: 4.0<br></p>
 			<br>
-			<img src="images/wosslogo.png" alt="WOSS" style="float:left; padding:5px 15px 5px 5px; width:150px; height:150px;">
+			</div>
+		</div><!-- end edu div -->
+		<div id="savvy">
+			<br>
+			<div class="pic"><img src="images/sswlogo.png" alt="SavvySoftWorks" style="padding:5px 15px 5px 5px; width:200px; height:102px;"></div>
+			<div class="info">
+			<p>Internship focused on building and deploying Web Apps<br>
+			   With JavaScript and Ruby on Rails<br>
+			   Contact: <a href="https://twitter.com/paulscoder" target="blank">Paul Scarrone</a></p>
+			</div>
+		</div><!-- end savvy div -->
+		<div id="woss">
+			<br>
+			<div class ="pic"><img src="images/wosslogo.png" alt="WOSS" style="float:left; padding:5px 15px 5px 5px; width:150px; height:150px;"></div>
+			<div class="info">
 			<p>Member of <a href="http://westmorelandoss.com">Westmoreland Open Source Software</a><br>
-				Find us on <a href="https://www.facebook.com/westmorelandopensourcesoftware/">Facebook</a><br>
+				Or find us on <a href="https://www.facebook.com/westmorelandopensourcesoftware/">Facebook</a></p><br>
+			</div>
 		</div><!-- end WOSS div -->
 
 
@@ -66,8 +68,9 @@
 <footer>
 <br><hr>
 Gary A. Newsome<br>
-<a href="https://twitter.com/garyanewsome">@garyanewsome</a><br>
-2016
+Contact: <a href="https://twitter.com/garyanewsome">@garyanewsome</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">Gary A. Newsome</a><br>
+&copy2016
 <br>
 </footer>
 </body>
