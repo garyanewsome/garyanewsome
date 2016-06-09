@@ -5,7 +5,7 @@
 
 header, main, nav, footer, section, article, figure, figcaption, aside { display: block; }
 
-body	{	@include outer-container;
+body	{	@include outer-container(1024px);
 			background-color: #DDDDDD;
 		}
 
@@ -19,12 +19,11 @@ header {	@include span-columns(12 of 12);
 header h2 	{ font-family: 'Crushed', Georgia, serif;
 			}
 			
-main 	{	padding: 10px;
-			overflow: auto;
+main 	{	overflow: auto;
 			margin-left: 20px;
 			margin-right: 20px;
-			padding-right: 20px;
 			color: #333333;
+			border: 1px outset #CCCCCC;
 		}
 
 main a:hover 	{	color: #0000FF;
@@ -52,8 +51,8 @@ footer {	text-align: center;
 
 #savvy	{	@include span-columns(12);
 			padding: 25px;
-			background-color: #B7B7B7;
-			color: #000048;
+			background-color: #FFFFFF;
+			color: #333333;
 			}
 
 #woss	{	@include span-columns(12);

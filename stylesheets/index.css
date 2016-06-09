@@ -8,7 +8,7 @@ header, main, nav, footer, section, article, figure, figcaption, aside {
   display: block; }
 
 body {
-  max-width: 68em;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   background-color: #DDDDDD; }
@@ -33,12 +33,11 @@ header h2 {
   font-family: 'Crushed', Georgia, serif; }
 
 main {
-  padding: 10px;
   overflow: auto;
   margin-left: 20px;
   margin-right: 20px;
-  padding-right: 20px;
-  color: #333333; }
+  color: #333333;
+  border: 1px outset #CCCCCC; }
 
 main a:hover {
   color: #0000FF;
@@ -91,8 +90,8 @@ footer {
   margin-right: 2.35765%;
   width: 100%;
   padding: 25px;
-  background-color: #B7B7B7;
-  color: #000048; }
+  background-color: #FFFFFF;
+  color: #333333; }
   #savvy:last-child {
     margin-right: 0; }
 
