@@ -10,14 +10,12 @@ body	{	@include outer-container(1024px);
 		}
 
 header {	@include span-columns(12 of 12);
-			padding: 10px;
+			//padding: 4px;
 			text-align: center;
+			font-size: 1.25em;
 			font-family: 'Crushed', Georgia, serif;
 			color: #333333;
 		}
-
-header h2 	{ font-family: 'Crushed', Georgia, serif;
-			}
 			
 main 	{	overflow: auto;
 			margin-left: 20px;

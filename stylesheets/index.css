@@ -22,15 +22,12 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  padding: 10px;
   text-align: center;
+  font-size: 1.25em;
   font-family: 'Crushed', Georgia, serif;
   color: #333333; }
   header:last-child {
     margin-right: 0; }
-
-header h2 {
-  font-family: 'Crushed', Georgia, serif; }
 
 main {
   overflow: auto;
