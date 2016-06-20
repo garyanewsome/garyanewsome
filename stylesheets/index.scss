@@ -3,64 +3,92 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-header, main, nav, footer, section, article, figure, figcaption, aside { display: block; }
+$background: #DDDDDD;
+$backgroundlight: #FFFFFF;
+$darktext: #333333;
+$wccc: #005627;
+$woss: #2E4056;
 
-body	{	@include outer-container(1024px);
-			background-color: #DDDDDD;
-		}
+body{	
+	@include outer-container(1024px);
+	background-color: $background;
+}
 
-header {	@include span-columns(12 of 12);
-			//padding: 4px;
-			text-align: center;
-			font-size: 1.25em;
-			font-family: 'Crushed', Georgia, serif;
-			color: #333333;
-		}
+header{
+	@include span-columns(12 of 12);
+	text-align: center;
+	font-size: 1.25em;
+	font-family: 'Crushed', Georgia, serif;
+	color: $darktext;
+}
 			
-main 	{	overflow: auto;
-			margin-left: 20px;
-			margin-right: 20px;
-			color: #333333;
-			border: 1px outset #CCCCCC;
-		}
+main{
+	overflow: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	color: $darktext;
+	background-color: $backgroundlight;
+	border: 1px outset #CCCCCC;
+}
 
-main a:hover 	{	color: #0000FF;
-					font-style: italic;
-					padding-left: 5px;
-				}
+main a:hover{	
+	color: #0000FF;
+	font-style: italic;
+	padding-left: 5px;
+}
 
-main a:visited { color: #0000FF;}
+main a:visited{
+	color: #0000FF;
+}
 
-h1 {font-size: 4em;	}
+h1{
+	font-size: 4em;
+}
 
-footer {	text-align: center; 
-			font-size: 1em;
-			padding: 10px;
-			margin-left: 20px; 
-			margin-right: 20px; }
+footer{
+	text-align: center; 
+	font-size: 1em;
+	padding: 10px;
+	margin-left: 20px; 
+	margin-right: 20px;
+}
 
-#banner	{@include span-columns(8);}
-#contact {@include span-columns(4);}
+#banner{
+	@include span-columns(8);
+}
 
-#edu	{	@include span-columns(12);
-			padding: 25px;
-			background-color: #FFFFFF;
-			color: #005627;}
+#contact{
+	@include span-columns(4);
+}
 
-#savvy	{	@include span-columns(12);
-			padding: 25px;
-			background-color: #FFFFFF;
-			color: #333333;
-			}
+#edu{
+	@include span-columns(12);
+	padding: 24px;
+	color: $wccc;
+}
 
-#woss	{	@include span-columns(12);
-padding: 25px;
-			background-color: #FFFFFF;
-			color: #2E4056;}
+#savvy{
+	@include span-columns(12);
+	padding: 24px;
+	color: $darktext;
+}
 
-.pic{@include span-columns(3)};
-.info{@include span-columns(9)};
+#woss{
+	@include span-columns(12);
+	padding: 25px;
+	color: $woss;
+}
 
-.pic, .info, .banner, .contact	{	@media screen and (max-width: 768px){
-						@include span-columns(12 of 12);}}
+.pic{
+	@include span-columns(3);
+}
+
+.info{
+	@include span-columns(9);
+}
+
+.pic, .info, .banner, .contact{
+	@media screen and (max-width: 768px){
+	@include span-columns(12 of 12);}
+}
 
