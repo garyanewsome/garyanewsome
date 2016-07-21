@@ -3,9 +3,10 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-$background: #F5F5F5;
+// $background: #F5F5F5;
+$background: #F5F5DC;
 $backgroundlight: #FFFFFF;
-$darktext: #333333;
+$darktext: #000000;
 $wccc: #005627;
 $woss: #2E4056;
 $savvy: #000078;
@@ -95,6 +96,14 @@ footer{
 	// @include span-columns(8);
 	padding: 1em;
 	color: $woss;
+}
+
+#woss a {
+	color: $woss;
+}
+
+#woss a:hover {
+	color: #0000FF;
 }
 
 .aside {

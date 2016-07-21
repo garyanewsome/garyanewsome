@@ -8,7 +8,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F5F5F5;
+  background-color: #F5F5DC;
   font-family: "Trebuchet MS", Helvetica, sans-serif; }
   body::after {
     clear: both;
@@ -23,7 +23,7 @@ header {
   text-align: center;
   font-size: 1.25em;
   font-family: 'Crushed', "Trebuchet MS", Helvetica, sans-serif;
-  color: #333333; }
+  color: #000000; }
   header:last-child {
     margin-right: 0; }
 
@@ -65,7 +65,7 @@ footer {
   margin-right: 2.35765%;
   width: 65.88078%;
   margin: 0px;
-  color: #333333;
+  color: #000000;
   background-color: #FFFFFF;
   border: 1px outset #CCCCCC; }
   .content:last-child {
@@ -91,6 +91,12 @@ footer {
 #woss {
   padding: 1em;
   color: #2E4056; }
+
+#woss a {
+  color: #2E4056; }
+
+#woss a:hover {
+  color: #0000FF; }
 
 .aside {
   float: left;
