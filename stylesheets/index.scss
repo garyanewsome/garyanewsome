@@ -3,38 +3,36 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-$background: #DDDDDD;
+$background: #F5F5F5;
 $backgroundlight: #FFFFFF;
 $darktext: #333333;
 $wccc: #005627;
 $woss: #2E4056;
+$savvy: #000078;
+$asidebackground: #660000;
 
 body{	
-	@include outer-container(1024px);
+	@include outer-container;
 	background-color: $background;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 header{
 	@include span-columns(12 of 12);
 	text-align: center;
 	font-size: 1.25em;
-	font-family: 'Crushed', Georgia, serif;
+	font-family: 'Crushed', "Trebuchet MS", Helvetica, sans-serif;
 	color: $darktext;
 }
 			
 main{
-	overflow: auto;
-	margin-left: 20px;
-	margin-right: 20px;
-	color: $darktext;
-	background-color: $backgroundlight;
-	border: 1px outset #CCCCCC;
+	
+	
 }
 
 main a:hover{	
 	color: #0000FF;
-	font-style: italic;
-	padding-left: 5px;
+	// font-style: italic;
 }
 
 main a:visited{
@@ -61,34 +59,72 @@ footer{
 	@include span-columns(4);
 }
 
-#edu{
-	@include span-columns(12);
-	padding: 24px;
+.content {
+	@include span-columns(8);
+	margin: 0px;
+	color: $darktext;
+	background-color: $backgroundlight;
+	border: 1px outset #CCCCCC;
+}
+
+#wccc{
+	// @include span-columns(8);
+	padding: 1em;
 	color: $wccc;
 }
 
+#wccc a {
+	color: $wccc;
+}
+
+#wccc a:hover {
+	color: #0000FF;
+}
+
 #savvy{
-	@include span-columns(12);
-	padding: 24px;
-	color: $darktext;
+	// @include span-columns(8);
+	padding: 1em;
+	color: $savvy;
+}
+
+#savvy .pic {
+	font-family: 'Ubuntu', "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #woss{
-	@include span-columns(12);
-	padding: 25px;
+	// @include span-columns(8);
+	padding: 1em;
 	color: $woss;
 }
 
-.pic{
+.aside {
 	@include span-columns(3);
+	@include shift(1);
+	padding: 1em;
+	background-color: $asidebackground;
+	color: #FFFFFF;
+	border: 5px outset #FFFFFF;
+	box-shadow: 1px 1px 2px $asidebackground;
+}
+
+a{
+	text-decoration: none;
+	// overflow: hidden;
+}
+.pic{
+	@include span-columns(3 of 8);
 }
 
 .info{
-	@include span-columns(9);
+	@include span-columns(5 of 8);
 }
 
 .pic, .info, .banner, .contact{
 	@media screen and (max-width: 768px){
 	@include span-columns(12 of 12);}
+}
+
+footer {
+	clear: both;
 }
 

@@ -5,10 +5,11 @@ html {
   box-sizing: inherit; }
 
 body {
-  max-width: 1024px;
+  max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #DDDDDD; }
+  background-color: #F5F5F5;
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
   body::after {
     clear: both;
     content: "";
@@ -21,23 +22,13 @@ header {
   width: 100%;
   text-align: center;
   font-size: 1.25em;
-  font-family: 'Crushed', Georgia, serif;
+  font-family: 'Crushed', "Trebuchet MS", Helvetica, sans-serif;
   color: #333333; }
   header:last-child {
     margin-right: 0; }
 
-main {
-  overflow: auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: #333333;
-  background-color: #FFFFFF;
-  border: 1px outset #CCCCCC; }
-
 main a:hover {
-  color: #0000FF;
-  font-style: italic;
-  padding-left: 5px; }
+  color: #0000FF; }
 
 main a:visited {
   color: #0000FF; }
@@ -68,49 +59,69 @@ footer {
   #contact:last-child {
     margin-right: 0; }
 
-#edu {
+.content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  padding: 24px;
-  color: #005627; }
-  #edu:last-child {
+  width: 65.88078%;
+  margin: 0px;
+  color: #333333;
+  background-color: #FFFFFF;
+  border: 1px outset #CCCCCC; }
+  .content:last-child {
     margin-right: 0; }
+
+#wccc {
+  padding: 1em;
+  color: #005627; }
+
+#wccc a {
+  color: #005627; }
+
+#wccc a:hover {
+  color: #0000FF; }
 
 #savvy {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  padding: 24px;
-  color: #333333; }
-  #savvy:last-child {
-    margin-right: 0; }
+  padding: 1em;
+  color: #000078; }
+
+#savvy .pic {
+  font-family: 'Ubuntu', "Trebuchet MS", Helvetica, sans-serif; }
 
 #woss {
+  padding: 1em;
+  color: #2E4056; }
+
+.aside {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  padding: 25px;
-  color: #2E4056; }
-  #woss:last-child {
+  width: 23.23176%;
+  margin-left: 8.5298%;
+  padding: 1em;
+  background-color: #660000;
+  color: #FFFFFF;
+  border: 5px outset #FFFFFF;
+  box-shadow: 1px 1px 2px #660000; }
+  .aside:last-child {
     margin-right: 0; }
+
+a {
+  text-decoration: none; }
 
 .pic {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
+  margin-right: 3.57866%;
+  width: 35.26334%; }
   .pic:last-child {
     margin-right: 0; }
 
 .info {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%; }
+  margin-right: 3.57866%;
+  width: 61.158%; }
   .info:last-child {
     margin-right: 0; }
 
@@ -122,5 +133,8 @@ footer {
     width: 100%; }
     .pic:last-child, .info:last-child, .banner:last-child, .contact:last-child {
       margin-right: 0; } }
+
+footer {
+  clear: both; }
 
 /*# sourceMappingURL=index.css.map */
