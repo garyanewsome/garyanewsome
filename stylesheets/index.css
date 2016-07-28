@@ -107,8 +107,7 @@ footer {
   padding: 1em;
   background-color: #660000;
   color: #FFFFFF;
-  border: 5px outset #FFFFFF;
-  box-shadow: 1px 1px 2px #660000; }
+  border: 1px outset #FFFFFF; }
   .aside:last-child {
     margin-right: 0; }
 
@@ -119,7 +118,8 @@ a {
   float: left;
   display: block;
   margin-right: 3.57866%;
-  width: 35.26334%; }
+  width: 35.26334%;
+  padding-left: 1em; }
   .pic:last-child {
     margin-right: 0; }
 
