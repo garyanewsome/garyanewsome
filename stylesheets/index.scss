@@ -24,18 +24,8 @@ header{
 	font-family: 'Crushed', "Trebuchet MS", Helvetica, sans-serif;
 	color: $darktext;
 }
-			
-main{
-	
-	
-}
 
 main a:hover{	
-	color: #0000FF;
-	// font-style: italic;
-}
-
-main a:visited{
 	color: #0000FF;
 }
 
@@ -67,42 +57,36 @@ footer{
 	border: 1px outset #CCCCCC;
 }
 
-#wccc{
+.wccc{
 	// @include span-columns(8);
 	padding: 1em;
 	color: $wccc;
 }
 
-#wccc a {
+.wccc a {
 	color: $wccc;
 }
 
-#wccc a:hover {
-	color: #0000FF;
-}
-
-#savvy{
-	// @include span-columns(8);
+.savvy{
 	padding: 1em;
 	color: $savvy;
 }
 
-#savvy .pic {
+.savvy a {
+	color: $savvy;
+}
+
+.savvy .pic {
 	font-family: 'Ubuntu', "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#woss{
-	// @include span-columns(8);
+.woss {
 	padding: 1em;
 	color: $woss;
 }
 
-#woss a {
+.woss a {
 	color: $woss;
-}
-
-#woss a:hover {
-	color: #0000FF;
 }
 
 .aside {
@@ -112,13 +96,12 @@ footer{
 	background-color: $asidebackground;
 	color: #FFFFFF;
 	border: 1px outset #FFFFFF;
-	// box-shadow: 1px 1px 2px $asidebackground;
 }
 
 a{
 	text-decoration: none;
-	// overflow: hidden;
 }
+
 .pic{
 	@include span-columns(3 of 8);
 	padding-left: 1em;

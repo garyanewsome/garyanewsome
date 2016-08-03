@@ -30,9 +30,6 @@ header {
 main a:hover {
   color: #0000FF; }
 
-main a:visited {
-  color: #0000FF; }
-
 h1 {
   font-size: 4em; }
 
@@ -71,32 +68,29 @@ footer {
   .content:last-child {
     margin-right: 0; }
 
-#wccc {
+.wccc {
   padding: 1em;
   color: #005627; }
 
-#wccc a {
+.wccc a {
   color: #005627; }
 
-#wccc a:hover {
-  color: #0000FF; }
-
-#savvy {
+.savvy {
   padding: 1em;
   color: #000078; }
 
-#savvy .pic {
+.savvy a {
+  color: #000078; }
+
+.savvy .pic {
   font-family: 'Ubuntu', "Trebuchet MS", Helvetica, sans-serif; }
 
-#woss {
+.woss {
   padding: 1em;
   color: #2E4056; }
 
-#woss a {
+.woss a {
   color: #2E4056; }
-
-#woss a:hover {
-  color: #0000FF; }
 
 .aside {
   float: left;
