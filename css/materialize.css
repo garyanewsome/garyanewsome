@@ -1,3 +1,6 @@
+@import "https://fonts.googleapis.com/css?family=Oxygen:400,700";
+@import "https://fonts.googleapis.com/css?family=Ubuntu";
+@import "https://fonts.googleapis.com/css?family=Crushed";
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6335,23 +6338,16 @@ body {
 nav {
   background-color: #000000;
   font-family: "Crushed", "Trebuchet MS", Helvetica, sans-serif; }
-
-nav .brand-logo {
-  color: #F5F5DE; }
-
-nav ul a {
-  font-size: 1.25em;
-  color: #F5F5DE; }
+  nav .brand-logo {
+    color: #F5F5DE; }
+  nav ul a {
+    font-size: 1.25em;
+    color: #F5F5DE; }
 
 .header {
   font-family: "Ubuntu", "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
   color: #660000; }
-
-footer.page-footer {
-  background-color: #000000;
-  color: #F5F5DE;
-  padding-bottom: 1em; }
 
 .contact {
   margin-top: 1em; }
@@ -6368,60 +6364,56 @@ h1 {
   padding-right: 2em;
   padding-top: 1em;
   color: #000078; }
-
-.savvy a {
-  color: #000078; }
-
-.savvy a:hover {
-  color: #0000f8; }
+  .savvy a {
+    color: #000078; }
+  .savvy a:hover {
+    color: #0000f8; }
 
 .savvy .pic {
-  font-family: 'Ubuntu', "Trebuchet MS", Helvetica, sans-serif; }
+  font-family: 'Oxygen', 'Ubuntu', Helvetica, sans-serif; }
 
 .wccc {
   padding-left: 2em;
   padding-right: 2em;
   color: #005627; }
-
-.wccc a {
-  color: #005627; }
-
-.wccc a:hover {
-  color: #00d561; }
+  .wccc a {
+    color: #005627; }
+  .wccc a:hover {
+    color: #00d561; }
 
 .woss {
   padding-left: 2em;
   padding-right: 2em;
   color: #2E4056; }
-
-.woss a {
-  color: #2E4056; }
-
-.woss a:hover {
-  color: #5c7ea8; }
-
-.about {
-  background-color: #000000;
-  color: #F5F5DE;
-  margin-top: 2em; }
-
-.about a {
-  color: #F5F5DE; }
-
-.about a:hover {
-  color: #00FFFF; }
-
-.about h5 {
-  text-align: left; }
+  .woss a {
+    color: #2E4056; }
+  .woss a:hover {
+    color: #5c7ea8; }
 
 .current {
   padding: 2em;
   margin-top: 2em;
   background-color: #660000;
   color: #F5F5DE; }
+  .current h4, .current h5, .current h6 {
+    text-align: center; }
+  .current a {
+    color: #F5F5DE; }
+  .current a:visited {
+    color: #F5F5DE; }
+  .current a:hover {
+    color: #00FFFF; }
 
-.current h4, h5, h6 {
-  text-align: center; }
+.about {
+  background-color: #000000;
+  color: #F5F5DE;
+  margin-top: 2em; }
+  .about h5 {
+    text-align: left; }
+  .about a {
+    color: #F5F5DE; }
+  .about a:hover {
+    color: #00FFFF; }
 
 .returntotop {
   position: fixed;

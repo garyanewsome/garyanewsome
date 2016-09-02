@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Crushed';
+
 // Mixins
 // @import "components/prefixer";
 @import "components/mixins";
@@ -60,27 +64,19 @@ body {
 nav {
   background-color: $maintext;
   font-family: "Crushed", "Trebuchet MS", Helvetica, sans-serif;
-}
-
-nav .brand-logo {
-  color: $background;
-}
-
-nav ul a {
-  font-size: 1.25em;
-  color: $background;
+  .brand-logo {
+    color: $background;
+  }
+  ul a {
+    font-size: 1.25em;
+    color: $background;
+  }
 }
 
 .header {
   font-family: "Ubuntu", "Trebuchet MS", Helvetica, sans-serif;
   text-align: center;
   color: $colortext;
-}
-
-footer.page-footer {
-  background-color: $maintext;
-  color: $background;
-  padding-bottom: 1em;
 }
 
 .contact {
@@ -90,14 +86,6 @@ footer.page-footer {
 h1 {
   color: $maintext;
 }
-
-// .content {
-//   @include span-columns(8);
-//   margin: 0px;
-//   color: $darktext;
-//   background-color: $backgroundlight;
-//   border: 1px outset #CCCCCC;
-// }
 
 .resume {
   background-color: #FFFFFF;
@@ -109,63 +97,40 @@ h1 {
   padding-right: 2em;
   padding-top: 1em;
   color: $savvy;
-}
-
-.savvy a {
-  color: $savvy;
-}
-
-.savvy a:hover {
-  color: lighten($savvy, 25%);
+  a {
+    color: $savvy;
+  }
+  a:hover {
+    color: lighten($savvy, 25%);
+  }
 }
 
 .savvy .pic {
-  font-family: 'Ubuntu', "Trebuchet MS", Helvetica, sans-serif;
+  font-family: 'Oxygen', 'Ubuntu', Helvetica, sans-serif;
 }
 
 .wccc{
   padding-left: 2em;
   padding-right: 2em;
   color: $wccc;
+  a {
+    color: $wccc;
+  }
+  a:hover {
+    color: lighten($wccc, 25%);
+  }
 }
 
-.wccc a {
-  color: $wccc;
-}
-
-.wccc a:hover {
-  color: lighten($wccc, 25%);
-}
 .woss {
   padding-left: 2em;
   padding-right: 2em;
   color: $woss;
-}
-
-.woss a {
-  color: $woss;
-}
-
-.woss a:hover {
-  color: lighten($woss, 25%);
-}
-
-.about {
-  background-color: $maintext;
-  color: $background;
-  margin-top: 2em;
-}
-
-.about a {
-  color: $background;
-}
-
-.about a:hover {
-  color: $hover;
-}
-
-.about h5 {
-  text-align: left;
+  a {
+    color: $woss;
+  }
+  a:hover {
+    color: lighten($woss, 25%);
+  }
 }
 
 .current {
@@ -173,10 +138,33 @@ h1 {
   margin-top: 2em;
   background-color: $colortext;
   color: $background;
+  h4, h5, h6 {
+  text-align: center;
+  }
+  a {
+    color: $background;
+  }
+  a:visited {
+  color: $background;
+  }
+  a:hover {
+    color: $hover;
+  }
 }
 
-.current h4, h5, h6 {
-  text-align: center;
+.about {
+  background-color: $maintext;
+  color: $background;
+  margin-top: 2em;
+  h5 {
+    text-align: left;
+  }
+  a {
+  color: $background;
+  }
+  a:hover {
+  color: $hover;
+  }
 }
 
 .returntotop {
