@@ -1,0 +1,25 @@
+{
+  "name": "savvysoftworks_middleman",
+  "version": "1.0.0",
+  "description": "page preview available at:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garyanewsome/savvysoftworks_middleman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garyanewsome/savvysoftworks_middleman/issues"
+  },
+  "homepage": "https://github.com/garyanewsome/savvysoftworks_middleman#readme",
+  "dependencies": {
+    "cornerstone-event-components": "git+ssh://git@bitbucket.org/thecodeavengers/inlinecomponents.git#pks/jsonp_all_the_things",
+    "material-design-icons": "^2.2.3",
+    "moment": "^2.14.1"
+  },
+  "devDependencies": {}
+}

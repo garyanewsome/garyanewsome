@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import 'https://fonts.googleapis.com/css?family=Oxygen:400,700';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Crushed';
+
+// Mixins
+// @import "components/prefixer";
+@import "materialize/components/mixins";
+@import "materialize/components/color";
+
+// Variables;
+@import "materialize/components/variables";
+
+// Reset
+@import "materialize/components/normalize";
+
+// components
+@import "materialize/components/global";
+@import "materialize/components/icons-material-design";
+@import "materialize/components/grid";
+@import "materialize/components/navbar";
+@import "materialize/components/roboto";
+@import "materialize/components/typography";
+@import "materialize/components/cards";
+@import "materialize/components/toast";
+@import "materialize/components/tabs";
+@import "materialize/components/tooltip";
+@import "materialize/components/buttons";
+@import "materialize/components/dropdown";
+@import "materialize/components/waves";
+@import "materialize/components/modal";
+@import "materialize/components/collapsible";
+@import "materialize/components/chips";
+@import "materialize/components/materialbox";
+@import "materialize/components/forms/forms";
+@import "materialize/components/table_of_contents";
+@import "materialize/components/sideNav";
+@import "materialize/components/preloader";
+@import "materialize/components/slider";
+@import "materialize/components/carousel";
+@import "materialize/components/date_picker/default";
+@import "materialize/components/date_picker/default.date";
+@import "materialize/components/date_picker/default.time";
+
+$background: #F5F5DE;
+$maintext: #000000;
+$colortext: #660000;
+$altcolor: #759EB8;
+$hover: #00FFFF;
+
+$wccc: #005627;
+$woss: #2E4056;
+$savvy: #000078;
+
+a:hover {  
+  color: $hover;
+}
+
+body {
+  background-color: $background;
+}
+
+nav {
+  background-color: $maintext;
+  font-family: "Crushed", "Trebuchet MS", Helvetica, sans-serif;
+  .brand-logo {
+    color: $background;
+  }
+  ul a {
+    font-size: 1.25em;
+    color: $background;
+  }
+}
+
+.header {
+  font-family: "Ubuntu", "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  color: $colortext;
+}
+
+.contact {
+  margin-top: 1em;
+}
+
+h1 {
+  color: $maintext;
+}
+
+.resume {
+  background-color: #FFFFFF;
+  border: 1px outset #CCCCCC;
+}
+
+.savvy{
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  color: $savvy;
+  a {
+    color: $savvy;
+  }
+  a:hover {
+    color: lighten($savvy, 25%);
+  }
+}
+
+.savvy .pic {
+  font-family: 'Oxygen', 'Ubuntu', Helvetica, sans-serif;
+}
+
+.wccc{
+  padding-left: 2em;
+  padding-right: 2em;
+  color: $wccc;
+  a {
+    color: $wccc;
+  }
+  a:hover {
+    color: lighten($wccc, 25%);
+  }
+}
+
+.woss {
+  padding-left: 2em;
+  padding-right: 2em;
+  color: $woss;
+  a {
+    color: $woss;
+  }
+  a:hover {
+    color: lighten($woss, 25%);
+  }
+}
+
+.current {
+  padding: 2em;
+  margin-top: 2em;
+  background-color: $colortext;
+  color: $background;
+  h4, h5, h6 {
+  text-align: center;
+  }
+  a {
+    color: $background;
+  }
+  a:visited {
+  color: $background;
+  }
+  a:hover {
+    color: $hover;
+  }
+}
+
+.about {
+  background-color: $maintext;
+  color: $background;
+  margin-top: 2em;
+  h5 {
+    text-align: left;
+  }
+  a {
+  color: $background;
+  }
+  a:hover {
+  color: $hover;
+  }
+}
+
+.returntotop {
+    position: fixed;
+    background-color: $altcolor;
+    // width: 100%;
+}
+
+.returntotop:hover{
+  background-color: darken($altcolor, 25%);
+}
