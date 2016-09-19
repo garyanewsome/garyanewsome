@@ -100,13 +100,13 @@ h1 {
 .fadein_resume {
   // margin-top: 2em;
   height: 80px;
-  background: -moz-linear-gradient(270deg, darken($altcolor, 15%) 0%, $altcolor 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, darken($altcolor, 15%)), color-stop(100%, $altcolor)); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, darken($altcolor, 15%) 0%, $altcolor 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, darken($altcolor, 15%) 0%, $altcolor 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, darken($altcolor, 15%) 0%, $altcolor 100%); /* ie10+ */
-  background: linear-gradient(180deg, darken($altcolor, 15%) 0%, $altcolor 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($altcolor, 15%)', endColorstr='$altcolor',GradientType=0 ); /* ie6-9 */
+  background: -moz-linear-gradient(270deg, darken($altcolor, 5%) 0%, $altcolor 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, darken($altcolor, 5%)), color-stop(100%, $altcolor)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, darken($altcolor, 5%) 0%, $altcolor 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, darken($altcolor, 5%) 0%, $altcolor 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, darken($altcolor, 5%) 0%, $altcolor 100%); /* ie10+ */
+  background: linear-gradient(180deg, darken($altcolor, 5%) 0%, $altcolor 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($altcolor, 5%)', endColorstr='$altcolor',GradientType=0 ); /* ie6-9 */
   }
 
 .resume_body {
@@ -115,13 +115,13 @@ h1 {
 
 .fadeout_resume {
   height: 80px;
-  background: -moz-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 15%) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $altcolor), color-stop(100%, darken($altcolor, 15%))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 15%) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 15%) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 15%) 100%); /* ie10+ */
-  background: linear-gradient(180deg, $altcolor 0%, darken($altcolor, 15%) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$altcolor', endColorstr='darken($altcolor, 15%)',GradientType=0 ); /* ie6-9 */
+  background: -moz-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 5%) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $altcolor), color-stop(100%, darken($altcolor, 5%))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 5%) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 5%) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, $altcolor 0%, darken($altcolor, 5%) 100%); /* ie10+ */
+  background: linear-gradient(180deg, $altcolor 0%, darken($altcolor, 5%) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$altcolor', endColorstr='darken($altcolor, 5%)',GradientType=0 ); /* ie6-9 */
 }
 
 .resume {
@@ -175,13 +175,13 @@ h1 {
 .fadein_current {
   // margin-top: 2em;
   height: 80px;
-  background: -moz-linear-gradient(270deg, darken($colortext, 10%) 0%, $colortext 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, darken($colortext, 10%)), color-stop(100%, #colortext)); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, darken($colortext, 10%) 0%, $colortext 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, darken($colortext, 10%) 0%, $colortext 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, darken($colortext, 10%) 0%, $colortext 100%); /* ie10+ */
-  background: linear-gradient(180deg, darken($colortext, 10%) 0%, $colortext 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($colortext, 10%)', endColorstr='$colortext',GradientType=0 ); /* ie6-9 */
+  background: -moz-linear-gradient(270deg, darken($colortext, 5%) 0%, $colortext 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, darken($colortext, 5%)), color-stop(100%, #colortext)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, darken($colortext, 5%) 0%, $colortext 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, darken($colortext, 5%) 0%, $colortext 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, darken($colortext, 5%) 0%, $colortext 100%); /* ie10+ */
+  background: linear-gradient(180deg, darken($colortext, 5%) 0%, $colortext 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='darken($colortext, 5%)', endColorstr='$colortext',GradientType=0 ); /* ie6-9 */
 }
 
 .current {
@@ -204,13 +204,13 @@ h1 {
 
 .fadeout_current {
   height: 80px;
-  background: -moz-linear-gradient(270deg, $colortext 0%, darken($colortext, 10%) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $colortext), color-stop(100%, darken($colortext, 10%))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(270deg, $colortext 0%, darken($colortext, 10%) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(270deg, $colortext 0%, darken($colortext, 10%) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(270deg, $colortext 0%, darken($colortext, 10%) 100%); /* ie10+ */
-  background: linear-gradient(180deg, $colortext 0%, darken($colortext, 10%) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colortext', endColorstr='darken($colortext, 10%)',GradientType=0 ); /* ie6-9 */
+  background: -moz-linear-gradient(270deg, $colortext 0%, darken($colortext, 5%) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $colortext), color-stop(100%, darken($colortext, 5%))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, $colortext 0%, darken($colortext, 5%) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, $colortext 0%, darken($colortext, 5%) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, $colortext 0%, darken($colortext, 5%) 100%); /* ie10+ */
+  background: linear-gradient(180deg, $colortext 0%, darken($colortext, 5%) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colortext', endColorstr='darken($colortext, 5%)',GradientType=0 ); /* ie6-9 */
 }
 
 .blog {
