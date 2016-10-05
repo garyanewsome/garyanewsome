@@ -1,11 +1,16 @@
 <nav role="navigation" id="top">
   <div class="nav-wrapper"><a id="logo-container" href="/index.html" class="brand-logo">Gary A. Newsome</a>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/squares.html">Absurd JavaScript Squares Animation</a></li>
+    </ul>
+
     <ul class="right hide-on-med-and-down">
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#resume">Resume</a></li>
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#current">Current Projects</a></li>
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#blog">Blog</a></li>
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#about">About</a></li>
-      <!-- <li><a href="http://www.garyanewsome.wordpress.com" target="_blank">WordPress</a></li> -->
+      <li><a class="dropdown-button"  data-activates="dropdown1">Other Stuff<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
 
     <ul id="nav-mobile" class="side-nav">
@@ -13,7 +18,7 @@
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#current">Current Projects</a></li>
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#blog">Blog</a></li>
       <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#about">About</a></li>
-      <!-- <li><a href="http://www.garyanewsome.wordpress.com" target="_blank">WordPress</a></li> -->
+      <li><a href="/squares.html">Absurd JavaScript Squares Animation</a></li>
     </ul>
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
   </div>   

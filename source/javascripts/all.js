@@ -15,8 +15,10 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 $(document).ready(function(){
-  $('.parallax').parallax();
+  // $('.parallax').parallax();
+  $(".dropdown-button").dropdown();
 });
+
 
 
 
