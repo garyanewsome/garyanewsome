@@ -77,6 +77,13 @@ nav {
     font-size: 1.25em;
     color: $background;
   }
+  .dropdown-content li > a, .dropdown-content li > span {
+    color: $altcolor;
+  }
+  .dropdown-content li > a:hover, .dropdown-content li > span {
+    background-color: $maintext;
+    color: $hover;
+  }
 }
 
 .header {
@@ -238,6 +245,11 @@ h1 {
   a:hover {
   color: $hover;
   }
+}
+
+.footer {
+  background-color: $maintext;
+  color: $background;
 }
 
 .returntotop {
