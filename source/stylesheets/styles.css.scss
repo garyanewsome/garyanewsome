@@ -78,7 +78,8 @@ nav {
     color: $background;
   }
   .dropdown-content li > a, .dropdown-content li > span {
-    color: $altcolor;
+    background-color: $background;
+    color: $maintext;
   }
   .dropdown-content li > a:hover, .dropdown-content li > span {
     background-color: $maintext;
@@ -266,6 +267,21 @@ h1 {
   height: 240px;
 }
 
+.savvygirl {
+  background-color: #F5F5F5;
+  color: $savvy;
+  text-align: center;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  p {
+    margin: 0px;
+  }
+}
+
+.savvyshade {
+  background:
+      radial-gradient(ellipse at bottom left, rgba(0, 0, 120, .30) 0%, rgba(245, 245, 245, .50) 100%);
+  background-blend-mode: screen;
+}
 
 
 
