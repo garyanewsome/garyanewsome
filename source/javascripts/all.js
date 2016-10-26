@@ -1,5 +1,6 @@
 //= require jquery
 //= require materialize-sprockets
+//= require jquery-colorbox
 
 $(".button-collapse").sideNav();
 
@@ -18,7 +19,3 @@ $(document).ready(function(){
   // $('.parallax').parallax();
   $(".dropdown-button").dropdown();
 });
-
-
-
-
