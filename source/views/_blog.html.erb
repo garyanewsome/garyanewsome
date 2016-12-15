@@ -4,9 +4,9 @@
   <div class="row">
       <% blog.articles[0...4].each do |article| %>
         <article class="col s12 m4" style="padding-right: 2em;">
-          <h4>
+          <h5>
             <a href="<%= article.url %>"><%= article.title %></a>
-          </h4>
+          </h5>
           <time><%= article.date.strftime('%b %e %Y') %></time>
 
           <%= article.summary %>
