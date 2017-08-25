@@ -1,0 +1,15 @@
+.projects {
+  .tabs .indicator {
+    background-color: $hover;
+  }
+  .projects--tabs {
+    background-color: $colortext;
+    a {
+      color: $light-text;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+}
+

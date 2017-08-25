@@ -1,0 +1,17 @@
+.blog {
+  color: $light-text;
+  a {
+    color: $blog-anchor;
+  }
+  a:hover {
+    color: $hover;
+  }
+  article img {
+    max-width: 100%;
+  }
+}
+
+.blog_3col {
+  margin: 0 auto;
+  width: 90%;
+}

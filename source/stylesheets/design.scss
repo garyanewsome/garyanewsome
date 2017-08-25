@@ -1,0 +1,25 @@
+.design {
+  background-color: $background;
+  .brick{
+    margin: 1em 0;
+  }
+  padding: 2em;
+  .design-box {
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px $dark-text;
+  }
+  .design-box--savvy {
+    background-color: #F5F5F5;
+  }
+  .design-box--hkma {
+    background-color: #FFFFFF;
+  }
+  .design-box--lens {
+    background-color: green;
+  }
+  .design-box--savadoro {
+    background-color: $savadoro;
+    color: $light-text;
+  }
+}

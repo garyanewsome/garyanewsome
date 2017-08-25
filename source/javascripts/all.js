@@ -1,6 +1,7 @@
 //= require jquery
 //= require materialize-sprockets
 //= require jquery-colorbox
+//= require bricklayer/dist/bricklayer.min
 
 $(".button-collapse").sideNav();
 
@@ -14,6 +15,9 @@ $('a[href^="#"]').on('click', function(event) {
         }, 500);
     }
 });
+
+var bricklayer = new Bricklayer(document.querySelector('.development .bricklayer'))
+var bricklayer = new Bricklayer(document.querySelector('.design .bricklayer'))
 
 $(document).ready(function(){
   // $('.parallax').parallax();

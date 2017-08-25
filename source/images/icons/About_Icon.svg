@@ -1,0 +1,29 @@
+<svg width="400" height="400" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>About_Icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-127 241)">
+<g id="About_Icon">
+<g id="Rectangle 2">
+<use xlink:href="#path0_fill" transform="translate(127 -241)" fill="#2E294E"/>
+</g>
+<g id="Ellipse 3">
+<use xlink:href="#path1_fill" transform="translate(192 19)" fill="#FFFFFF"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path2_fill" transform="translate(233.25 -161)" fill="#FFFFFF"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="translate(233.25 -161)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(233.25 -161)" fill="#2E294E"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 400 0L 400 400L 0 400L 0 0Z"/>
+<path id="path1_fill" d="M 270 32.5C 270 50.4493 209.558 65 135 65C 60.4416 65 0 50.4493 0 32.5C 0 14.5507 60.4416 0 135 0C 209.558 0 270 14.5507 270 32.5Z"/>
+<path id="path2_fill" d="M 186.25 106C 186.25 164.542 144.557 212 93.125 212C 41.6935 212 0 164.542 0 106C 0 47.4578 41.6935 0 93.125 0C 144.557 0 186.25 47.4578 186.25 106Z"/>
+<path id="path3_stroke_2x" d="M 178.25 106C 178.25 161.129 139.196 204 93.125 204L 93.125 220C 149.917 220 194.25 167.956 194.25 106L 178.25 106ZM 93.125 204C 47.0537 204 8 161.129 8 106L -8 106C -8 167.956 36.3333 220 93.125 220L 93.125 204ZM 8 106C 8 50.8713 47.0537 8 93.125 8L 93.125 -8C 36.3333 -8 -8 44.0443 -8 106L 8 106ZM 93.125 8C 139.196 8 178.25 50.8713 178.25 106L 194.25 106C 194.25 44.0443 149.917 -8 93.125 -8L 93.125 8Z"/>
+</defs>
+</svg>

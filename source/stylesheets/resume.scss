@@ -1,0 +1,50 @@
+.resume_body  {
+  padding: 4em 0;
+
+  background: -moz-linear-gradient(270deg, $resume 0%, darken($resume, 5%) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $resume), color-stop(100%, darken($resume, 5%))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, $resume 0%, darken($resume, 5%) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, $resume 0%, darken($resume, 5%) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, $resume 0%, darken($resume, 5%) 100%); /* ie10+ */
+  background: linear-gradient(180deg, $resume 0%, darken($resume, 5%) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$resume', endColorstr='darken($resume, 5%)',GradientType=0 ); /* ie6-9 */
+}
+
+.resume {
+  padding-top: 2em;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 4px 4px 2px $dark-text;
+  .resume-section {
+    padding: 0 2em;
+  }
+  .savvy{
+    padding-top: 1em;
+    color: $savvy;
+    a {
+      color: $savvy;
+      &:hover { color: lighten($savvy, 25%); }
+    }
+  }
+  .wccc{
+    color: $wccc;
+    a {
+      color: $wccc;
+      &:hover { color: lighten($wccc, 25%); }
+    }
+  }
+  .phalcon {
+    color: $phalcon-gray;  
+    a {
+      color: $phalcon-gray;
+      &:hover { color: $phalcon; }
+    }
+  }
+  .woss {
+    color: $woss;
+    a {
+      color: $woss;
+      &:hover { color: lighten($woss, 25%); }
+    }
+  }
+}
