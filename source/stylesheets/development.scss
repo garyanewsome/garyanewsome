@@ -1,0 +1,47 @@
+.development {
+  background-color: $background;
+  .brick{
+    margin: 1em 0;
+  }
+  padding: 2em;
+  color: $light-text;
+  a {
+    color: $light-text;
+    &:visited {
+      color: $light-text;
+    }
+    &:hover {
+      color: $hover;
+    }
+  }
+
+  .dev-box {
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px $dark-text;
+  }
+  .dev-box--savvy {
+    background-color: $savvy;
+  }
+  .dev-box--savadoro {
+    background-color: $savadoro;
+  }
+  .dev-box--rd1 {
+    background-color: $rd1;
+  }
+  .dev-box--cornerstone {
+    background-color: $cornerstone;
+  }
+  .dev-box--savvyshots {
+    background-color: $savvyshots;
+  }
+  .dev-box--shootproof {
+    background-color: $shootproof;
+  }
+  .dev-box--lovebettie {
+    background-color: $lovebettie;
+  }
+  .dev-box--eandi {
+    background-color: $eandi;
+  }
+}

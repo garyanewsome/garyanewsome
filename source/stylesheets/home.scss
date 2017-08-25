@@ -1,0 +1,10 @@
+.home {
+  color: $light-text;
+  .home--img {
+    max-height: 160px;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px $dark-text;
+    &:hover { box-shadow: 0px 0px 16px $hover }
+  }
+}
