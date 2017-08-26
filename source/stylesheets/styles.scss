@@ -120,12 +120,14 @@ h1 {
 .returntotop {
     position: fixed;
     border-radius: 4px;
-    background-color: $returntotop;
+    background-color: darken($returntotop, 25%);
+    color: $hover;
     // width: 100%;
 }
 
 .returntotop:hover{
-  background-color: darken($returntotop, 25%);
+  background-color: $hover;
+  color: darken($returntotop, 25%);
 }
 
 .parallax-container {

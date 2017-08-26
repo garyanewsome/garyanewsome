@@ -1,5 +1,5 @@
 .savvygirl {
-  background-color: #CCCCCC;
+  background-color: #DEDEDD;
   color: $savvy;
   // text-align: center;
   p {
@@ -8,7 +8,7 @@
   a {
     color: $savvy;
     &:hover {
-      color: $light-text;
+      color: darken($hover, 15%);
     }
   }
 }
