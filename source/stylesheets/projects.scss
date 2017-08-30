@@ -1,13 +1,13 @@
 .projects {
   .tabs .indicator {
-    background-color: $hover;
+    background-color: $colortext;
   }
   .projects--tabs {
-    background-color: $colortext;
+    background-color: $background;
     a {
-      color: $light-text;
+      color: $colortext;
       &:hover {
-        color: $hover;
+        color: lighten($colortext, 25%);
       }
     }
   }

@@ -1,10 +1,17 @@
 .home {
-  color: $light-text;
+  color: $resume;
+  a {
+    color: $resume;
+    &:hover {
+      color: lighten($resume, 20%);
+    }
+  }
   .home--img {
     max-height: 160px;
     margin: 1em;
+    border: 1px solid $dark-text;
     border-radius: 8px;
     box-shadow: 0px 4px 8px $dark-text;
-    &:hover { box-shadow: 0px 0px 16px $hover }
+    &:hover { box-shadow: 0px 4px 8px lighten($resume, 20%) }
   }
 }
