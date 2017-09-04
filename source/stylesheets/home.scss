@@ -3,7 +3,7 @@
   a {
     color: $light-text;
     &:hover {
-      color: lighten($light-text, 20%);
+      color: $hover;
     }
   }
 }

@@ -8,7 +8,7 @@
     <div class="row">
         <% blog.articles[0...1].each do |article| %>
           <article class="col s12" style="padding-bottom: 2em;">
-            <h5>
+            <h5 class="latest--title">
               <a href="<%= article.url %>"><%= article.title %></a>
             </h5>
             <time><%= article.date.strftime('%b %e %Y') %></time>

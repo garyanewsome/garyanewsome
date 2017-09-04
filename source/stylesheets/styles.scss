@@ -19,18 +19,6 @@ body {
   margin-top: 1em;
 }
 
-.blog {
-  a {
-    color: $colortext;
-  }
-  a:hover {
-    color: lighten($colortext, 25%);
-  }
-  article img {
-    max-width: 100%;
-  }
-}
-
 #sidenav-overlay {
   background-color: #EEEEF0;
 }
@@ -63,9 +51,10 @@ body {
 }
 
 .latest {
+  .latest--title a{ color: $blog-link; }
   color: $light-text;
   a {
-    color: $light-text;
+    color: lighten($blog-link, 20%);
     &:hover { color: $hover; }
   }
 }
