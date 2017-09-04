@@ -1,0 +1,21 @@
+<div id="latest">
+  <div class="latest-header valign-wrapper">
+    <div class="container">
+      <h5>Latest musings and news&#8230;<span class="right"><h6><i><a class="latest--archive" href="/blog.html">&#8230;archive</a></i></h6></span></h5>
+    </div>
+  </div>
+  <div class="container latest" id="blog">
+    <div class="row">
+        <% blog.articles[0...1].each do |article| %>
+          <article class="col s12" style="padding-bottom: 2em;">
+            <h5>
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </h5>
+            <time><%= article.date.strftime('%b %e %Y') %></time>
+
+            <%= article.body %>
+          </article>
+        <% end %>
+    </div>
+  </div>
+</div>

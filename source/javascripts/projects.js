@@ -1,6 +1,5 @@
 //= require jquery
 //= require materialize-sprockets
-//= require jquery-colorbox
 //= require bricklayer/dist/bricklayer.min
 
 $(".button-collapse").sideNav();
@@ -16,25 +15,12 @@ $('a[href^="#"]').on('click', function(event) {
     }
 });
 
-  var ifExists = document.querySelector('#contact form')
+  var ifExists = document.querySelector('.bricklayer')
   if (ifExists !== null) {
     var bricklayer = new Bricklayer(document.querySelector('.development .bricklayer'))
     var bricklayer = new Bricklayer(document.querySelector('.design .bricklayer'))
   }
-  
+
 $(document).ready(function(){
-  $(".dropdown-button").dropdown();
-
-  var navBarY = $(".bottom-bar").offset().top;
-  $(document).scroll(function () {
-    if ($(window).scrollTop() >= navBarY) {
-      $(".bottom-bar").addClass("fixed-top")
-    } else {
-      $(".bottom-bar").removeClass("fixed-top")
-    }
-  })
-
-  var height = (window).innerHeight
-  $('.home').css({'height':height})
-
-}) 
+  $(".bottom-bar").addClass("fixed-top")
+})
