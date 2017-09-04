@@ -1,7 +1,9 @@
 .blog {
-  color: $dark-text;
+  .this-is-a-blog { font-family: "Crushed", "Trebuchet MS", Helvetica, sans-serif; }
+  .blog--title a{ color: $blog-link; }
+  color: $light-text;
   a {
-    color: $resume;
+    color: lighten($blog-link, 20%);
   }
   a:hover {
     color: $hover;

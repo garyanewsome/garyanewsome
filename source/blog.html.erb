@@ -1,9 +1,13 @@
+---
+layout: projects
+---
+<div style="height:64px;"></div>
 <div class="container blog" id="blog">
-  <h5 style="margin-left: -1em;">A Blog Type Thing</h5>
+  <h4 class="this-is-a-blog" style="margin-left: -1em;">A Blog Type Thing&#8230; ish</h4>
   <div class="row">
       <% blog.articles.each do |article| %>
         <article class="col s12" style="padding-bottom: 2em;">
-          <h5>
+          <h5 class="blog--title">
             <a href="<%= article.url %>"><%= article.title %></a>
           </h5>
           <time><%= article.date.strftime('%b %e %Y') %></time>

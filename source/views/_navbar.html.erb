@@ -1,35 +1,41 @@
-<nav role="navigation" id="top">
-  <div class="nav-wrapper"><a id="logo-container" href="/index.html" class="brand-logo">Gary A. Newsome</a>
+<!-- <div class="bottom-bar"> -->
+<div class="bottom-bar">
+  <nav role="navigation" id="top" class="">
+    <div class="nav-wrapper"><a id="logo-container" href="/index.html" class="brand-logo">Gary A. Newsome</a>
 
-    <ul class="right hide-on-med-and-down">
-      <li><a href="/resume.html">Resume</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/savvygirl.html">SavvyGirl</a></li>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#resume">Resume</a></li>
+        <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#latest">Latest</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/blog.html">Blog</a></li>
 
-      <li>
-        <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">
-          <img src="/images/sm-icons/linkedin.svg" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;margin-top:16px;">
-        </a>
-      </li>
-      <li>
-        <a href="https://www.github.com/garyanewsome" target="_blank">
-          <img src="/images/sm-icons/github-white.svg" alt="GitHub.com/garyanewsome" style="height:32px;margin-top:16px;">
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/garyanewsome" target="_blank">
-          <img src="/images/sm-icons/twitter.svg" alt="https://twitter.com/garyanewsome" style="height:32px;margin-top:16px;">
-        </a>
-      </li>
-    </ul>
+        <li>
+          <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">
+            <img src="/images/sm-icons/linkedin.svg" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;margin-top:16px;">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com/garyanewsome" target="_blank">
+            <img src="/images/sm-icons/github-white.svg" alt="GitHub.com/garyanewsome" style="height:32px;margin-top:16px;">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/garyanewsome" target="_blank">
+            <img src="/images/sm-icons/twitter.svg" alt="https://twitter.com/garyanewsome" style="height:32px;margin-top:16px;">
+          </a>
+        </li>
+      </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="/resume.html">Resume</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/savvygirl.html">SavvyGirl</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>   
-</nav>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+
+<div>
+  <ul id="nav-mobile" class="side-nav">
+    <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#resume">Resume</a></li>
+    <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#latest">Latest</a></li>
+    <li><a href="/projects.html">Projects</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+  </ul>
+</div>   
