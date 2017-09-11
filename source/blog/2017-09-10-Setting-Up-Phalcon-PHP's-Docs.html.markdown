@@ -10,11 +10,11 @@ I recently made my first open source contribution to the PhalconPHP docs. A smal
 
 This post is basically just to document my experience setting up the `docs` and the `docs-app` for [PhalconPHP](https://phalconphp.com/). *To note, I am using 2015 MacBookPro running macOS Sierra*.
 
-I followed the setup guide at [https://blog.phalconphp.com/post/helping-with-documentation](https://blog.phalconphp.com/post/helping-with-documentation). Which was real well, it got me close, but there were a few tweaks I needed to get things running right for me.
+I followed the setup guide at [https://blog.phalconphp.com/post/helping-with-documentation](https://blog.phalconphp.com/post/helping-with-documentation). Which worked really well and it got me close, but there were a few tweaks I needed to make to get things running right for me.
 
 The major difference between the conventional setup and the way I did it is, I am not using Nanobox to serve the `docs-app`. I tried a couple of times, but it just wasn't working out for me. *I did use it for the `deploy` step.*
 
-What I did, with the help of friend, boss, and Phalcon core team member [Paul Scarrone](https://twitter.com/PaulSCoder), was install [phalcon-devtools](https://github.com/phalcon/phalcon-devtools) globally instead. This allowed me run the app via a local development server instead. So onto the good stuff.
+What I did, with the help of friend, boss, and Phalcon core team member [Paul Scarrone](https://twitter.com/PaulSCoder), was install [phalcon-devtools](https://github.com/phalcon/phalcon-devtools) globally instead. This allowed me to run the app via a local development server instead. So, onto the good stuff.
 
 ##### Installing Phalcon-Devtools
 
@@ -22,17 +22,16 @@ I used Composer for the install. `composer global require phalcon-devtools`
 
 Which, installs at `~/.composer/vender/bin`.
 
-Then in my `.bashrc` I created the variable `COMPOSERBIN` which I set to the path `COMPOSERBIN="$HOME/.composer/vendor/bin"`.
+Then in my `.bashrc`, I created the variable `COMPOSERBIN` which I set to the path `COMPOSERBIN="$HOME/.composer/vendor/bin"`.
 
-then you add it to your `PATH`, `export PATH=$COMPOSERBIN:$PATH`
+Then you add the variable to your `PATH`, `export PATH=$COMPOSERBIN:$PATH`.
 
-the final step to get this running was to create the `alias`, `alias phalcon=$COMPOSERBIN/phalcon.php`, 
-this allows you to can `phalcon` from the terminal in any folder.
+The final step to get this running was to create the `alias`, `alias phalcon=$COMPOSERBIN/phalcon.php`, 
+this allows you to call the `phalcon` command from your terminal in any folder.
 
-The other change, would be in your `/env` file, `APP_URL=http://localhost:8000` instead of the default one listed in the documentation.
+The other change I need to make was in the `.env` file. I changed the `APP_URL` line to `APP_URL=http://localhost:8000` instead of the default url listed in the documentation.
 
-Now you can just `cd` into the `docs-app` folder and type `phalcon serve`, then visit `http://localhost:8000`
-in your browser of choice.
+Now you can just `cd` into the `docs-app` folder and type `phalcon serve`, then visit `http://localhost:8000` in your browser of choice.
 
 *A list of the available devtools commands can be found in the README.md at [phalcon-devtools](https://github.com/phalcon/phalcon-devtools) or by typing `phalcon --help` in your terminal.*
 
