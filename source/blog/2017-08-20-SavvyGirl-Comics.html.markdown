@@ -1,0 +1,13 @@
+---
+title: SavvyGirl Comics
+date: 2017-08-20 05:00 UTC
+author: Gary A. Newsome
+category: SavvyGirl
+tags: SavvyGirl
+---
+
+SavvyGirl comics, started not long after I first joined SavvySoftWorks. I was trying to create a logo for SavvyMailer, a product Paul Scarrone and I had built for SavvySoftWorks. Of course, I had just finished school, just started developing, and sure I am gonna design the logo too! Well of course it went about as well as you would suspect. Though I kept after it for awhile, since I was learning the tooling, and it something fun I could poke at in my free time.
+
+At somepoint for whatever reason, I was joking around and made a stick figure thing. A little conversation later, and I started doing some stick figure comics for and aobut the company. I did sit on them awhile, thinking they are too goofy, they are too not good enough, questioning life in general. Though eventually I started to share them with Paul, and SavvyGirl was born.
+
+SavvyGirl remains largely unchanged from the original design. As it was always something I could relax and do rather quickly. I have always avoided getting overly complicated in the actual comic itself. Though I am starting to feel a redesign coming, but that is still just a thought.
