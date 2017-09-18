@@ -1,19 +1,20 @@
-<div style="height:64px;"></div>
-<% wrap_layout :projects do %>
-  <div class="container blog">
-    <div class='row'>
-      <div class='col s12'>
-        <header>
-          <h4><%= current_article.title %></h4>
-          <p>
-            <%= current_article.data.author %> - 
-            <time><%= current_article.date.strftime('%b %e %Y') %></time>
-          </p>
-        </header>
-        <article>
-          <%= yield %>
-        </article>
+<div class="blog-bkg">
+  <% wrap_layout :projects do %>
+    <div class="container blog">
+      <div class='row'>
+        <div class='col s12'>
+          <header>
+            <h4><%= current_article.title %></h4>
+            <p>
+              <%= current_article.data.author %> - 
+              <time><%= current_article.date.strftime('%b %e %Y') %></time>
+            </p>
+          </header>
+          <article>
+            <%= yield %>
+          </article>
+        </div>
       </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>

@@ -1,3 +1,8 @@
+.blog-bkg {
+  margin-top: 64px;
+  padding-top: 2em;
+  // background-color: #F7F7F7;
+}
 .blog {
   .this-is-a-blog { font-family: "Crushed", "Trebuchet MS", Helvetica, sans-serif; }
   .blog--title a{ color: $blog-link; }
@@ -19,6 +24,7 @@
 }
 
 code {
-  background-color: lighten($background, 5%);
-  padding: 4px;
+  background-color: darken($background, 15%);
+  color: $light-text;
+  padding: 0 4px;
 }
