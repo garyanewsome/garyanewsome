@@ -1,5 +1,5 @@
 .development {
-  background-color: $background-light;
+  background-color: $background;
   .brick{
     margin: 1em 0;
   }
@@ -19,7 +19,8 @@
     padding: 1em;
     border: 1px solid $dark-text;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px $dark-text;
+    box-shadow: inset 1px 1px 4px $background-light;
+    // box-shadow: 1px 1px 4px $background-light;
   }
   .dev-box--savvy {
     background-color: $savvy;
