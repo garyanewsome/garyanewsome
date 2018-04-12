@@ -1,14 +1,19 @@
 .projects {
   .tabs .indicator {
-    background-color: $hover;
+    background-color: darken($background, 10%);
+    color: $background-light;
   }
   .projects--tabs {
     margin-top: 64px;
-    background-color: $background;
+    background-color: darken($background-light, 10%);
+    .active {
+      background-color: $background-light;
+      color: $dark-text;
+    }
     a {
-      color: $light-text;
+      color: $dark-text;
       &:hover {
-        color: $hover;
+        color: $background;
       }
     }
   }
