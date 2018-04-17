@@ -1,9 +1,9 @@
 .home {
-  color: $light-text;
+  color: $dark-text;
   a {
-    color: $light-text;
+    color: $dark-text;
     &:hover {
-      color: $hover;
+      color: darken($hover, 20%);
     }
   }
 }
