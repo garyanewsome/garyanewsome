@@ -3,7 +3,7 @@ a:hover {
 }
 
 body {
-  background-color: $background;
+  background-color: $background-light;
   font-family: "Raleway", "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -51,11 +51,11 @@ body {
 }
 
 .latest {
-  .latest--title a{ color: $blog-link; }
-  color: $light-text;
+  .latest--title a{ color: $phalcon-gray; }
+  color: $dark-text;
   a {
-    color: lighten($blog-link, 20%);
-    &:hover { color: $hover; }
+    color: $phalcon-gray;
+    &:hover { color: $phalcon; }
   }
 }
 

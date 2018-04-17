@@ -4,14 +4,14 @@
     margin: 1em 0;
   }
   padding: 2em;
-  color: $light-text;
+  color: $dark-text;
   a {
-    color: $light-text;
+    color: $phalcon-gray;
     &:visited {
-      color: $light-text;
+      color: $phalcon-gray;
     }
     &:hover {
-      color: $hover;
+      color: $phalcon;
     }
   }
 
@@ -19,30 +19,31 @@
     padding: 1em;
     border: 1px solid $dark-text;
     border-radius: 4px;
-    box-shadow: inset 1px 1px 4px $background-light;
+    box-shadow: inset 1px 1px 4px $background;
+    background: darken($background-light, 1%);
   }
-  .dev-box--savvy {
-    background-color: $savvy;
-  }
-  .dev-box--savadoro {
-    background-color: $savadoro;
-  }
-  .dev-box--rd1 {
-    background-color: $rd1;
-  }
-  .dev-box--cornerstone {
-    background-color: $cornerstone;
-  }
-  .dev-box--savvyshots {
-    background-color: $savvyshots;
-  }
-  .dev-box--shootproof {
-    background-color: $shootproof;
-  }
-  .dev-box--lovebettie {
-    background-color: $lovebettie;
-  }
-  .dev-box--eandi {
-    background-color: $eandi;
-  }
+  // .dev-box--savvy {
+  //   background-color: $savvy;
+  // }
+  // .dev-box--savadoro {
+  //   background-color: $savadoro;
+  // }
+  // .dev-box--rd1 {
+  //   background-color: $rd1;
+  // }
+  // .dev-box--cornerstone {
+  //   background-color: $cornerstone;
+  // }
+  // .dev-box--savvyshots {
+  //   background-color: $savvyshots;
+  // }
+  // .dev-box--shootproof {
+  //   background-color: $shootproof;
+  // }
+  // .dev-box--lovebettie {
+  //   background-color: $lovebettie;
+  // }
+  // .dev-box--eandi {
+  //   background-color: $eandi;
+  // }
 }
