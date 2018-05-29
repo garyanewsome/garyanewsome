@@ -8,10 +8,10 @@
   .blog--title a{ color: $blog-link; }
   color: $dark-text;
   a {
-    color: lighten($blog-link, 20%);
+    color: $blog-link;
   }
   a:hover {
-    color: $hover;
+    color: $blog-link-hover;
   }
   article img {
     max-width: 100%;
@@ -24,7 +24,6 @@
 }
 
 code {
-  background-color: darken($background-light, 5%);
-  // color: $light-text;
+  background-color: darken($light-text, 5%);
   padding: 0 4px;
 }

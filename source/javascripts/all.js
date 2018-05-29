@@ -1,7 +1,5 @@
 //= require jquery
 //= require materialize-sprockets
-//= require jquery-colorbox
-//= require bricklayer/dist/bricklayer.min
 
 $(".button-collapse").sideNav();
 
@@ -25,14 +23,14 @@ $('a[href^="#"]').on('click', function(event) {
 $(document).ready(function(){
   $(".dropdown-button").dropdown();
 
-  var navBarY = $(".bottom-bar").offset().top;
-  $(document).scroll(function () {
-    if ($(window).scrollTop() >= navBarY) {
-      $(".bottom-bar").addClass("fixed-top")
-    } else {
-      $(".bottom-bar").removeClass("fixed-top")
-    }
-  })
+  // var navBarY = $(".bottom-bar").offset().top;
+  // $(document).scroll(function () {
+  //   if ($(window).scrollTop() >= navBarY) {
+  //     $(".bottom-bar").addClass("fixed-top")
+  //   } else {
+  //     $(".bottom-bar").removeClass("fixed-top")
+  //   }
+  // })
 
   var height = (window).innerHeight
   $('.home').css({'height':height})

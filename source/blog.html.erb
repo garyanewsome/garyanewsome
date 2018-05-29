@@ -1,9 +1,9 @@
 ---
-layout: projects
+layout: layout
 ---
 <div class="blog-bkg">
   <div class="container blog" id="blog">
-    <h4 class="this-is-a-blog" style="margin-left: -1em;">A Blog Type Thing&#8230; ish</h4>
+    <h4 class="this-is-a-blog">Writings&#8230;</h4>
     <div class="row">
         <% blog.articles.each do |article| %>
           <article class="col s12" style="padding-bottom: 2em;">
@@ -12,7 +12,7 @@ layout: projects
             </h5>
             <time><%= article.date.strftime('%b %e %Y') %></time>
 
-            <%= article.summary(500, '...') %>
+            <%= article.summary(750, '...') %>
 
             <a href="<%= article.url %>">Read more</a>
           </article>

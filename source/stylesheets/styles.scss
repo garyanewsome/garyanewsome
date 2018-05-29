@@ -3,73 +3,19 @@ a:hover {
 }
 
 body {
-  background-color: $background-light;
+  padding-bottom: 8em;
+  background-color: $light-text;
   font-family: "Raleway", "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.header {
-  text-align: center;
-  color: $light-text;
-  a {
-    color: $dark-text;
-  }
-}
-
-.contact {
-  margin-top: 1em;
+  font-size: 1.1em;
+  line-spacing: 1.4em;
 }
 
 #sidenav-overlay {
-  background-color: #EEEEF0;
+  // background-color: $light-text;
 }
 
-.blog_3col {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.about {
-  // background-color: $dark-text;
-  color: $light-text;
-  margin-top: 2em;
-  h5 {
-    text-align: left;
-  }
-  a {
-  color: $light-text;
-  }
-  a:hover {
-  color: $hover;
-  }
-}
-
-.latest-header {
-  height: 64px;
+#nav-mobile {
   background-color: $dark-text;
-  color: $light-text;
-  .latest--archive { color: $blog-link; }
-}
+  a { color: $light-text; }
 
-.latest {
-  .latest--title a{ color: $phalcon-gray; }
-  color: $dark-text;
-  a {
-    color: $phalcon-gray;
-    &:hover { color: $phalcon; }
-  }
-}
-
-.returntotop {
-  position: fixed;
-  border-radius: 4px;
-  background-color: $dark-text;
-  color: $hover;
-  &:hover{
-    background-color: $hover;
-    color: $dark-text;
-  }
-}
-
-#materialbox-overlay {
-  background-color: #F5F5F5;
 }
