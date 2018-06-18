@@ -1,7 +1,6 @@
 .blog-bkg {
   margin-top: 64px;
   padding-top: 2em;
-  // background-color: #F7F7F7;
 }
 .blog {
   .this-is-a-blog { font-family: "Crushed", "Trebuchet MS", Helvetica, sans-serif; }
@@ -11,7 +10,7 @@
     color: $blog-link;
   }
   a:hover {
-    color: $blog-link-hover;
+    text-shadow: 1px 0px $dark-text;
   }
   article img {
     max-width: 100%;
