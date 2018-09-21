@@ -1,0 +1,40 @@
+<!Doctype HTML>
+<html>
+{{ partial "writings_head.html" . }}
+<head>
+  <title>Gary A. Newsome | Writing</title>
+</head>
+<body>
+  {{ partial "writings_nav.html" . }}
+  <div class="container writings">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Writings...</h2>
+      </div>
+    </div>
+
+    <div class="writings-container">
+      <div class="row">
+        <div class="col-sm-12">
+          {{ range where .Site.Pages "Type" "post" }}
+            {{ if not (eq .Title "Posts") }}
+              <div class="writings-post-block">
+                <h4><a href="{{.Permalink}}" class="writings-link">{{ .Title }}</a></h4>
+                <p class="writings-date-link"><em class="small">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em></p>
+                <p>{{ .Summary }}</p>
+              </div>
+              {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="../index" class="return-home float-right">Return Home</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

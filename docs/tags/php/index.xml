@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Gary A. Newsome</title>
+    <link>/tags/php/</link>
+    <description>Recent content in Php on Gary A. Newsome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Sep 2017 15:29:15 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up Phalcon PHPs Docs</title>
+      <link>/post/setting-up-phalcon-phps-docs/</link>
+      <pubDate>Sun, 10 Sep 2017 15:29:15 -0400</pubDate>
+      
+      <guid>/post/setting-up-phalcon-phps-docs/</guid>
+      <description>I recently made my first open source contribution to the PhalconPHP docs. It was a small contribution, but nevertheless it felt nice, and it was a great way to start being an open source contributor. This post is basically just to document my experience setting up the docs and the docs-app for PhalconPHP. To note, I am using 2015 MacBookPro running macOS Sierra.
+I started by following the setup guide at https://blog.</description>
+    </item>
+    
+  </channel>
+</rss>
