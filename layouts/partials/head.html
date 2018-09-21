@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Gary A. Newsome, Developer at SavvySoftWorks, LLC., developer, amateur designer, musician, artist, creative being">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- robots -->
+<!-- you may configure it in the front matter of the page or in site params -->
+{{ if or (isset .Params "robots") (isset .Site.Params "robots") }}
+<meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}{{ .Site.Params.robots }}{{ end }}">
+{{ end }}
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory
+     or place appropriate <link .../> etc in favicon.html partial -->
+{{ partial "favicon.html" . }}
+
+{{ .Hugo.Generator }}
+
+<meta property="og:url" content="http://www.kaelberband.com/" />
+<meta property="og:title" content="Kaelber" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="Kaelber" />
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css?family=Crushed|Raleway" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/index.css" />
+
+<!-- JS -->
+<script src="{{ .Site.BaseURL }}js/jquery_v3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/index.js"></script>

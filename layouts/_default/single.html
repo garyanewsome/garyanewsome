@@ -1,0 +1,37 @@
+<!Doctype HTML>
+{{ partial "post_head.html" }}
+<head>
+  <title>Gary A. Newsome | {{ .Title }}</title>
+</head>
+<html>
+<body>
+  {{ partial "single_nav.html" . }}
+  <div class="single container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>{{ .Title }}</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12">
+        {{ .Params.author }} | <em> {{ dateFormat "Monday, Jan 2, 2006" .Date }} </em>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 single-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 single-return-links">
+        <a href="{{ .Site.BaseURL}}">Return Home</a>
+        |
+        <a href="{{ .Site.BaseURL}}writings"> Return to Writings</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

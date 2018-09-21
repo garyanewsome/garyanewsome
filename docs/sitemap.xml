@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/post/setting-up-phalcon-phps-docs/</loc>
+    <lastmod>2017-09-10T15:29:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/savadoro-beta-available/</loc>
+    <lastmod>2017-08-24T15:24:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/writings/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/electron/</loc>
+    <lastmod>2017-08-24T15:24:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-09-10T15:29:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2017-08-24T15:24:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/open-source/</loc>
+    <lastmod>2017-09-10T15:29:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/phalconphp/</loc>
+    <lastmod>2017-09-10T15:29:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/php/</loc>
+    <lastmod>2017-09-10T15:29:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-09-10T15:29:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/savadoro/</loc>
+    <lastmod>2017-08-24T15:24:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/savvysoftworks/</loc>
+    <lastmod>2017-08-24T15:24:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-08-24T15:24:33-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

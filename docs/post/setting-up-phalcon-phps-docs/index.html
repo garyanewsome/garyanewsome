@@ -1,0 +1,139 @@
+<!Doctype HTML>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Gary A. Newsome, Developer at SavvySoftWorks, LLC., developer, amateur designer, musician, artist, creative being">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+<link rel="shortcut icon" href="images/favicon.png" />
+
+
+
+
+<meta property="og:url" content="http://www.kaelberband.com/" />
+<meta property="og:title" content="Kaelber" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="Kaelber" />
+
+
+<link href="https://fonts.googleapis.com/css?family=Crushed|Raleway" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../css/index.css" />
+
+
+<script src="../../js/jquery_v3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/index.js"></script>
+
+<head>
+  <title>Gary A. Newsome | Setting Up Phalcon PHPs Docs</title>
+</head>
+<html>
+<body>
+  <nav class="navbar sticky-top fixed-bottom navbar-dark navbar-expand-lg writings-nav">
+  <a class="navbar-brand" href="/">Gary A. Newsome</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <br class="d-block d-lg-none" />
+      <li class="nav-item writings-nav-item">
+        <a class="nav-link" href="writings">Writings</a>
+      </li>
+
+      <li class="nav-item sm-nav-item d-none d-lg-block">
+        <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">
+          <img src="../../images/sm-icons/linkedin-light.svg" class="nav-img" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;" />
+        </a>
+      </li>
+      <li class="nav-item sm-nav-item d-none d-lg-block">
+        <a href="https://www.github.com/garyanewsome" target="_blank">
+          <img src="../../images/sm-icons/github-light.svg" class="nav-img" alt="GitHub.com/garyanewsome" style="height:32px;" />
+        </a>
+      </li>
+      <li class="nav-item sm-nav-item d-none d-lg-block">
+        <a href="https://twitter.com/garyanewsome" target="_blank">
+          <img src="../../images/sm-icons/twitter-light.svg" class="nav-img" alt="https://twitter.com/garyanewsome" style="height:32px;" />
+        </a>
+      </li>
+      <li class="nav-item sm-nav-item d-block d-lg-none">
+        <hr />
+        <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">
+          <img src="../../images/sm-icons/linkedin-light.svg" class="nav-img" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;" />
+        </a>
+        <a href="https://www.github.com/garyanewsome" target="_blank">
+          <img src="../../images/sm-icons/github-light.svg" class="nav-img" alt="GitHub.com/garyanewsome" style="height:32px;" />
+        </a>
+        <a href="https://twitter.com/garyanewsome" target="_blank">
+          <img src="../../images/sm-icons/twitter-light.svg" class="nav-img" alt="https://twitter.com/garyanewsome" style="height:32px;" />
+        </a>
+      </li>
+  </div>
+</nav>
+
+  <div class="single container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Setting Up Phalcon PHPs Docs</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12">
+        Gary A. Newsome | <em> Sunday, Sep 10, 2017 </em>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 single-content">
+        
+
+<p>I recently made my first open source contribution to the PhalconPHP docs. It was a small contribution, but nevertheless it felt nice, and it was a great way to start being an open source contributor. This post is basically just to document my experience setting up the <code>docs</code> and the <code>docs-app</code> for <a href="https://phalconphp.com/">PhalconPHP</a>. <em>To note, I am using 2015 MacBookPro running macOS Sierra</em>.</p>
+
+<p>I started by following the setup guide at <a href="https://blog.phalconphp.com/post/helping-with-documentation">https://blog.phalconphp.com/post/helping-with-documentation</a>. Which worked really well and it got me close, but there were a few tweaks I needed to make to get things running on my end.</p>
+
+<p>The main difference between the conventional setup and the way I did it was, not using Nanobox to serve the <code>docs-app</code>. I tried a couple of times, but it just wasn&rsquo;t working out for me. <em>I did use it for the <code>deploy</code> step though.</em> What I did, with the help of friend, boss, and Phalcon core team member <a href="https://twitter.com/PaulSCoder">Paul Scarrone</a>, was install <a href="https://github.com/phalcon/phalcon-devtools">phalcon-devtools</a> instead. This allowed me to run the app via a local development server instead.</p>
+
+<p>So, onto the good stuff.</p>
+
+<h5 id="installing-phalcon-devtools">Installing Phalcon-Devtools</h5>
+
+<p>I used Composer for the install. <code>composer global require phalcon-devtools</code> Composer is a dependency manager for PHP, and can be found at <a href="https://getcomposer.org/">https://getcomposer.org/</a>. This installs phalcon-devtools at <code>~/.composer/vender/bin</code>. Worth mentioning here, is the <code>global</code> flag. I installed this globally, so I can use it from anywhere on my computer in the future.</p>
+
+<p>Next, in my <code>.bashrc</code> file, I created the variable <code>COMPOSERBIN</code> which I set to the path <code>COMPOSERBIN=&quot;$HOME/.composer/vendor/bin&quot;</code>.</p>
+
+<p>Then you add the variable to your PATH, <code>export PATH=$COMPOSERBIN:$PATH</code>.</p>
+
+<p>The final step in the <code>.bashrc</code> was to create the alias, <code>alias phalcon=$COMPOSERBIN/phalcon.php</code>,
+this allows you to call the <code>phalcon</code> command from your terminal.</p>
+
+<p>In the <code>docs-app</code>, the last change I need to make was in the <code>.env</code> file. I changed the <code>APP_URL</code> line to <code>APP_URL=http://localhost:8000</code> instead of the default url listed in the documentation.</p>
+
+<p>Now you can just <code>cd</code> into the <code>docs-app</code> folder and type <code>phalcon serve</code>, then visit <code>http://localhost:8000</code> in your browser of choice.</p>
+
+<p><em>A list of the available devtools commands can be found in the README.md at <a href="https://github.com/phalcon/phalcon-devtools">phalcon-devtools</a> or by typing <code>phalcon --help</code> in your terminal.</em></p>
+
+<p>One final note, I actually cloned both the <code>docs</code> and the <code>docs-app</code> repos to my local machine. This allows me to work on the changes in the <code>docs-app</code> repo, then just copy/paste those changes into my <code>docs</code> repo, where I commit the changes.</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 single-return-links">
+        <a href="">Return Home</a>
+        |
+        <a href="writings"> Return to Writings</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

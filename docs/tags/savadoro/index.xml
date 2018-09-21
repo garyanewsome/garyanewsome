@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Savadoro on Gary A. Newsome</title>
+    <link>/tags/savadoro/</link>
+    <description>Recent content in Savadoro on Gary A. Newsome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Aug 2017 15:24:33 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/savadoro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Savadoro Beta Available</title>
+      <link>/post/savadoro-beta-available/</link>
+      <pubDate>Thu, 24 Aug 2017 15:24:33 -0400</pubDate>
+      
+      <guid>/post/savadoro-beta-available/</guid>
+      <description>Cross posted from SavvySoftWorks.
+SavvySoftWorks, LLC is proud to announce the Savadoro timer.
+Savadoro is Pomodoro Technique timer, while this is still in a very early beta stage, we have big ideas for the timer long term. Including integration into Slack as well as the ability to track you and your team&amp;rsquo;s past progress.
+For a little background, per Wikipedia the Pomodoro Technique is a time management technique developed in the late 1980s.</description>
+    </item>
+    
+  </channel>
+</rss>
