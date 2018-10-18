@@ -19,75 +19,90 @@
 <link href="https://fonts.googleapis.com/css?family=Crushed|Raleway" rel="stylesheet">
 
 
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/index.css" />
+
+<link rel="stylesheet" href="css/site.css" />
 
 
 <script src="js/jquery_v3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-<script src="js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
+
+<script src="js/site.js"></script>
 
 <head>
   <title>Gary A. Newsome</title>
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <div class="jumbotron-container">
-      <h1 class="jumbotron-name">Gary A. Newsome</h1>
-      <div>
-        <h3>Developer at <a href="https://savvysoftworks.com/" class="savvy-link jumbo-link" target="_blank">SavvySoftWorks, LLC</a></h3>
-        <h3><a class="phalcon-link jumbo-link" href="https://www.facebook.com/groups/phalcon.users/" target="blank">Western Pa Phalcon PHP User Group</a></h3>
-        <h3>Open Source Contributor</h3>
-        <h3>Amateur Designer, Musician, Artist ...</h3>
+  <div class="navbar">
+  <ul class="navbar-ul" role="navigation">
+    <li class="navbar-brand">
+      <a class="nav-link navbar-brand" href="/">Gary A. Newsome</a>
+    </li>
+
+    <li class="nav-link-li navbar-writings-link">
+      <a class="nav-link" href="writings">Writings</a>
+    </li>
+    
+    <li class="nav-link-li linkedin-icon">
+      <a class="nav-link" href="https://www.linkedin.com/in/garyanewsome" target="_blank">
+        <img src="../images/sm-icons/linkedin-light.svg" class="nav-img" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;" />
+      </a>
+    </li>
+    
+    <li class="nav-link-li github-icon">
+      <a class="nav-link" href="https://www.github.com/garyanewsome" target="_blank">
+        <img src="../images/sm-icons/github-light.svg" class="nav-img" alt="GitHub.com/garyanewsome" style="height:32px;" />
+      </a>
+    </li>
+    
+    <li class="nav-link-li twitter-icon">
+      <a class="nav-link" href="https://twitter.com/garyanewsome" target="_blank">
+        <img src="../images/sm-icons/twitter-light.svg" class="nav-img" alt="https://twitter.com/garyanewsome" style="height:32px;" />
+      </a>
+    </li>
+     <li>
+      <div class="nav-menu-toggle">
+        <div class="nav-menu-toggle-one"></div>
+        <div class="nav-menu-toggle-two"></div>
+        <div class="nav-menu-toggle-three"></div>
       </div>
+    </li>
+  </ul>
+</div>
+
+<div class="mobile-nav">
+  <ul>
+    <li class="nav-link-mobile-li">
+      <a class="nav-link mobile-brand" href="/">Home</a>
+    </li>
+    <li class="nav-link-mobile-li">
+      <a class="nav-link" href="writings">Writings</a>
+    </li>
+    <li class="nav-link-mobile-li">
+      <a class="nav-link" href="https://www.linkedin.com/in/garyanewsome" target="_blank">
+        <img src="../images/sm-icons/linkedin-light.svg" class="nav-img" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;" />
+      </a>
+      <a class="nav-link" href="https://www.github.com/garyanewsome" target="_blank">
+        <img src="../images/sm-icons/github-light.svg" class="nav-img" alt="GitHub.com/garyanewsome" style="height:32px;" />
+      </a>
+      <a class="nav-link" href="https://twitter.com/garyanewsome" target="_blank">
+        <img src="../images/sm-icons/twitter-light.svg" class="nav-img" alt="https://twitter.com/garyanewsome" style="height:32px;" />
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  <div class="splash">
+  <div class="container">
+    <h1 class="">Gary A. Newsome</h1>
+    <div class="splash-sub-headings">
+      <h3>Developer at <a href="https://savvysoftworks.com/" class="savvy-link splash-link" target="_blank">SavvySoftWorks, LLC</a></h3>
+      <h3><a class="phalcon-link splash-link" href="https://www.facebook.com/groups/phalcon.users/" target="blank">Western Pa Phalcon PHP User Group</a></h3>
+      <h3>Open Source Contributor</h3>
+      <h3>Amateur Designer, Musician, Artist ...</h3>
     </div>
   </div>
 </div>
-
-  <nav class="navbar sticky-top fixed-bottom navbar-light navbar-expand-lg">
-  <a class="navbar-brand" href="/">Gary A. Newsome</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-      <br class="d-block d-lg-none" />
-      <li class="nav-item">
-        <a class="nav-link" href="writings">Writings</a>
-      </li>
-
-      <li class="nav-item sm-nav-item d-none d-lg-block">
-        <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">
-          <img src="images/sm-icons/linkedin.svg" class="nav-img" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;" />
-        </a>
-      </li>
-      <li class="nav-item sm-nav-item d-none d-lg-block">
-        <a href="https://www.github.com/garyanewsome" target="_blank">
-          <img src="images/sm-icons/github.svg" class="nav-img" alt="GitHub.com/garyanewsome" style="height:32px;" />
-        </a>
-      </li>
-      <li class="nav-item sm-nav-item d-none d-lg-block">
-        <a href="https://twitter.com/garyanewsome" target="_blank">
-          <img src="images/sm-icons/twitter.svg" class="nav-img" alt="https://twitter.com/garyanewsome" style="height:32px;" />
-        </a>
-      </li>
-      <li class="nav-item sm-nav-item d-block d-lg-none">
-        <hr />
-        <a href="https://www.linkedin.com/in/garyanewsome" target="_blank">
-          <img src="images/sm-icons/linkedin.svg" class="nav-img" alt="https://www.linkedin.com/in/garyanewsome" style="height:32px;" />
-        </a>
-        <a href="https://www.github.com/garyanewsome" target="_blank">
-          <img src="images/sm-icons/github.svg" class="nav-img" alt="GitHub.com/garyanewsome" style="height:32px;" />
-        </a>
-        <a href="https://twitter.com/garyanewsome" target="_blank">
-          <img src="images/sm-icons/twitter.svg" class="nav-img" alt="https://twitter.com/garyanewsome" style="height:32px;" />
-        </a>
-      </li>
-  </div>
-</nav>
 
 </body>
 </html>

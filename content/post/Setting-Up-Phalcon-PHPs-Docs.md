@@ -10,7 +10,7 @@ I recently made my first open source contribution to the PhalconPHP docs. It was
 
 I started by following the setup guide at [https://blog.phalconphp.com/post/helping-with-documentation](https://blog.phalconphp.com/post/helping-with-documentation). Which worked really well and it got me close, but there were a few tweaks I needed to make to get things running on my end.
 
-The main difference between the conventional setup and the way I did it was, not using Nanobox to serve the `docs-app`. I tried a couple of times, but it just wasn't working out for me. *I did use it for the `deploy` step though.* What I did, with the help of friend, boss, and Phalcon core team member [Paul Scarrone](https://twitter.com/PaulSCoder), was install [phalcon-devtools](https://github.com/phalcon/phalcon-devtools) instead. This allowed me to run the app via a local development server instead.
+The main difference between the conventional setup and the way I did it was, not using Nanobox to serve the `docs-app`. I tried a couple of times, but it just wasn't working out for me. *I did use it for the deploy step though.* What I did, with the help of friend, boss, and Phalcon core team member [Paul Scarrone](https://twitter.com/PaulSCoder), was install [phalcon-devtools](https://github.com/phalcon/phalcon-devtools) instead. This allowed me to run the app via a local development server instead.
 
 So, onto the good stuff.
 

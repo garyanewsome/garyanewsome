@@ -5,32 +5,24 @@
 </head>
 <html>
 <body>
-  {{ partial "single_nav.html" . }}
+  {{ partial "nav-post.html" . }}
   <div class="single container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>{{ .Title }}</h2>
-      </div>
+    <div>
+      <h2>{{ .Title }}</h2>
     </div>
     
-    <div class="row">
-      <div class="col-sm-12">
-        {{ .Params.author }} | <em> {{ dateFormat "Monday, Jan 2, 2006" .Date }} </em>
-      </div>
+    <div>
+      {{ .Params.author }} | <em> {{ dateFormat "Monday, Jan 2, 2006" .Date }} </em>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12 single-content">
-        {{ .Content }}
-      </div>
+    <div class="writings-container">
+      {{ .Content }}
     </div>
 
-    <div class="row">
-      <div class="col-sm-12 single-return-links">
-        <a href="../../index.html">Return Home</a>
-        |
-        <a href="../../writings"> Return to Writings</a>
-      </div>
+    <div class="return-links">
+      <a href="../../index.html">Return Home</a>
+      |
+      <a href="../../writings"> Return to Writings</a>
     </div>
   </div>
 </body>
