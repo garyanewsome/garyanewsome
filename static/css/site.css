@@ -170,14 +170,26 @@ ul {
   display: none;
 }
 
-.nav-menu-toggle-one,
-.nav-menu-toggle-two,
-.nav-menu-toggle-three{
-  width: 100%;
+.nav-menu-toggle-top,
+.nav-menu-toggle-middle,
+.nav-menu-toggle-bottom {
   height: 4px;
   background: var(--light-text);
-  margin: 6px auto;
+  margin: 8px auto;
   backface-visibility: hidden;
+}
+
+.nav-menu-toggle-top, .nav-menu-toggle-bottom { width: 88%; }
+.nav-menu-toggle.middle { width: 100%; }
+
+.nav-closed {
+  transform: rotate(0deg);
+  transition: transform 0.6s linear;
+}
+
+.nav-open {
+  transform: rotate(-60deg);
+  transition: transform 0.3s linear;
 }
 
 .mobile-nav {
@@ -187,6 +199,10 @@ ul {
   padding-top: 48px;
   background-color: var(--dark-text);
   text-align: center
+}
+
+.hidden {
+  display: none;
 }
 
 .nav-link-mobile-li {

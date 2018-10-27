@@ -1,8 +1,7 @@
 $(function(){
-  $(".mobile-nav").hide()
-
-  $(".nav-menu-toggle").on('click', function() {
-    $('.mobile-nav').fadeToggle()
+  $('.nav-menu-toggle').click(function() {
+    $(this).toggleClass('nav-open', 'nav-closed')
+    $('.mobile-nav').toggleClass('hidden')
   })
 })
 
