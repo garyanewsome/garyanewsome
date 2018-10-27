@@ -39,9 +39,9 @@ For a little background, per Wikipedia the Pomodoro Technique is a time manageme
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/writings/</guid>
-      <description> {{ partial &#34;writings_head.html&#34; . }}  Gary A. Newsome | Writing   {{ partial &#34;writings_nav.html&#34; . }} Writings...   {{ range where .Site.Pages &#34;Type&#34; &#34;post&#34; }} {{ if not (eq .Title &#34;Posts&#34;) }} {{ .Title }} {{ dateFormat &#34;Monday, Jan 2, 2006&#34; .Date }}
+      <description> {{ partial &#34;writings_head.html&#34; . }}  Gary A. Newsome | Writing   {{ partial &#34;nav.html&#34; . }} Writings...  {{ range where .Site.Pages &#34;Type&#34; &#34;post&#34; }} {{ if not (eq .Title &#34;Posts&#34;) }} {{ .Title }} {{ dateFormat &#34;Monday, Jan 2, 2006&#34; .Date }}
 {{ .Summary }}
- {{ end }} {{ end }}    Return Home      </description>
+ {{ end }} {{ end }}  Return Home     </description>
     </item>
     
   </channel>

@@ -5,34 +5,26 @@
   <title>Gary A. Newsome | Writing</title>
 </head>
 <body>
-  {{ partial "writings_nav.html" . }}
+  {{ partial "nav.html" . }}
   <div class="container writings">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>Writings...</h2>
-      </div>
+    <div class="writings-headline">
+      <h2>Writings...</h2>
     </div>
 
     <div class="writings-container">
-      <div class="row">
-        <div class="col-sm-12">
-          {{ range where .Site.Pages "Type" "post" }}
-            {{ if not (eq .Title "Posts") }}
-              <div class="writings-post-block">
-                <h4><a href="{{.Permalink}}" class="writings-link">{{ .Title }}</a></h4>
-                <p class="writings-date-link"><em class="small">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em></p>
-                <p>{{ .Summary }}</p>
-              </div>
-              {{ end }}
+      {{ range where .Site.Pages "Type" "post" }}
+        {{ if not (eq .Title "Posts") }}
+          <div class="writings-post-block writings-shadow">
+            <h4><a href="{{.Permalink}}" class="writings-link">{{ .Title }}</a></h4>
+            <p class="writings-date-link"><em class="small">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</em></p>
+            <p>{{ .Summary }}</p>
+          </div>
           {{ end }}
-        </div>
-      </div>
+      {{ end }}
     </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <a href="../index" class="return-home float-right">Return Home</a>
-      </div>
+    <div class="return-links">
+      <a href="../index.html">Return Home</a>
     </div>
 
   </div>
