@@ -11,6 +11,7 @@
 
   --hover: hsl(180, 100%, 40%);
 
+  --iw: hsl(343.3, 81.4%, 51.6%);
   --savvy: hsl(206, 53%, 51%);
   --savadoro: hsl(206, 52%, 31%);
   --phalcon: hsl(142, 54%, 62%);
@@ -99,6 +100,11 @@ ul {
   -moz-transition: color 1s ease;
   -o-transition: color 1s ease;
   transition: color 1s ease;
+}
+
+.iw-link:hover {
+  color: var(--iw);
+  text-decoration: none;
 }
 
 .savvy-link:hover {
