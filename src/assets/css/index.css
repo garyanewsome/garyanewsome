@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Crushed|Raleway');
+@import './default.css';
+
+:root {
+  --dark-text: hsl(276, 100%, 5%);
+  --dark-text-hover: hsl(276, 75%, 10%);
+  --theme: hsl(270, 73%, 30%);
+  --theme-hover: hsl(270, 44%, 55%);
+  --light-text: hsl(0, 0%, 98%);
+  --light-ish-text: hsl(0, 0%, 77%);
+
+  --code-bkg: hsl(254, 78%, 95%);
+
+  --hover: hsl(180, 100%, 40%);
+
+  --iw: hsl(343.3, 81.4%, 51.6%);
+  --savvy: hsl(206, 53%, 51%);
+  --savadoro: hsl(206, 52%, 31%);
+  --phalcon: hsl(142, 54%, 62%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--light-text);
+}
+
+.layout {
+  height: 100vh;
+}

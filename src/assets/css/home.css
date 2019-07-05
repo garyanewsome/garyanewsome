@@ -1,0 +1,61 @@
+.home {
+  padding: 1em;
+  line-height: 2.4em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-size: cover;
+  color: var(--theme);
+}
+
+.home-sub-headings {
+  color: var(--theme);
+}
+
+.home-link {
+  text-decoration: none;
+  color: var(--theme);
+  transition: color 1s ease;
+}
+
+.iw-link:hover {
+  color: var(--iw);
+  text-decoration: none;
+}
+
+.savvy-link:hover {
+  color: var(--savvy);
+  text-decoration: none;
+}
+
+.phalcon-link:hover {
+  color: var(--phalcon);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .home {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 768px) {
+  .home {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 667px) {
+  .home {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .home {
+    font-size: 1.1em;
+  }
+}
