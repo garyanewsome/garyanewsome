@@ -1,7 +1,0 @@
-baseURL = ""
-languageCode = "en-us"
-title = "Gary A. Newsome"
-publishDir = "docs"
-
-[taxonomies]
-   tag = "tags"
