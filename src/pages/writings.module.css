@@ -1,4 +1,4 @@
-.writings-container {
+.container {
   width: 80vw;
   margin: 0 auto;
   padding-top: 8em;
@@ -12,24 +12,24 @@
   box-shadow: 1px 1px 4px var(--light-ish-text);
 }
 
-.writings-block {
+.block {
   text-decoration: none;
 }
 
-a.writings-block,
-a.writings-block:visited {
+a.block,
+a.block:visited {
   color: var(--theme);
   transition: color 1s ease;
 }
 
-a.writings-block:hover {
+a.block:hover {
   color: var(--theme-hover);
 }
 
-.writings-date {
+.date {
   margin: 8px 0;
 }
 
-.writings-preview {
+.preview {
   font-size: 1.25em;
 }

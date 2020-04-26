@@ -1,35 +1,27 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+
+// custom typefaces
+import 'typeface-crushed'
+import 'typeface-raleway'
 
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import Header from '../components/Header'
 import Home from '../components/Home'
 
-import '../assets/css/default.css'
+import '../assets/css/index.css'
 
-class Index extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const siteDescription = data.site.siteMetadata.description
+const Index = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title
 
-    return (
-      <Layout
-        location={this.props.location}
-        title={siteTitle}
-        meta={[{ name: 'description', content: siteDescription }]}
-      >
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'Gary A. Newsome', content: siteDescription }]}
-          title={siteTitle}
-        />
-        <Header location={this.props.location} />
-        <Home />
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="Homepage" />
+      <Header location={location} />
+      <Home />
+    </Layout>
+  )
 }
 
 export default Index
@@ -39,7 +31,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        description
       }
     }
   }

@@ -1,0 +1,20 @@
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 8em 0 2em 0;
+  background-color: var(--light-text);
+  line-height: 2em;
+}
+
+.container code {
+  padding: 4px 4px 0 4px !important;
+  background-color: var(--code-bkg) !important;
+}
+
+.title {
+  color: var(--theme);
+}
+
+.date {
+  padding: 1em 0;
+}

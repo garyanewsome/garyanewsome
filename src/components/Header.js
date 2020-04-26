@@ -1,49 +1,39 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import headerStyles from './header.module.css'
 import MobileNav from './MobileNav'
 
-import '../assets/css/header.css'
+const Header = ({ location }) => {
+  const [showMobileNav, setShowMobileNav] = React.useState(false)
 
-class Header extends React.Component {
-  constructor() {
-    super()
+  const toggleShowMobileNav = () => {
+    setShowMobileNav(!showMobileNav)
+  }
 
-    this.state = {
-      showMobileNav: false,
-    }
-  }
-  toggleShowMobileNav = () => {
-    this.setState({ showMobileNav: !this.state.showMobileNav })
-  }
-  render() {
-    return (
-      <>
-        {this.state.showMobileNav && (
-          <MobileNav location={this.props.location} />
-        )}
-        <div className="header-container">
-          <div className="header">
-            <Link to="/" className="header-brand">
-              <h1>Gary A. Newsome</h1>
-            </Link>
-            <div className="header-links">
-              <div
-                id="header-nav-icon"
-                className={this.state.showMobileNav ? 'open' : ''}
-                onClick={() => this.toggleShowMobileNav()}
-              >
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
+  return (
+    <>
+      {showMobileNav && <MobileNav location={location} />}
+      <div className={headerStyles.container}>
+        <div className={headerStyles.header}>
+          <Link to="/" className={headerStyles.brand}>
+            <h1>Gary A. Newsome</h1>
+          </Link>
+          <div>
+            <div
+              className={[headerStyles.navIcon, showMobileNav ? headerStyles.open : null].join(' ')}
+              onClick={() => toggleShowMobileNav()}
+            >
+              <span />
+              <span />
+              <span />
+              <span />
             </div>
           </div>
         </div>
-      </>
-    )
-  }
+      </div>
+    </>
+  )
 }
 
 export default Header

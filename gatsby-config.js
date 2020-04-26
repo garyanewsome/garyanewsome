@@ -1,17 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gary A. Newsome',
-    author: 'Gary A. Newsome',
-    description: '',
+    title: `Gary A. Newsome`,
+    author: {
+      name: `Gary A. Newsome`,
+      summary: `Developer, musician, artist, creative type being.`,
+    },
+    description: `Developer, musician, artist, creative type being.`,
     siteUrl: 'https://www.garyanewsome.com/',
+    social: {
+      twitter: `garyanewsome`,
+      linkedin: `garyanewsome`,
+    },
   },
-  pathPrefix: '/garyanewsome',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        path: `${__dirname}/content/writings`,
+        name: `writings`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
       },
     },
     {
@@ -30,9 +43,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },
@@ -41,7 +54,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-73638902-2`,
       },
     },
     `gatsby-plugin-feed`,
@@ -52,12 +65,12 @@ module.exports = {
         short_name: `Gary A. Newsome`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#4c1584`,
         display: `minimal-ui`,
         icon: `src/assets/images/favicon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
   ],
 }

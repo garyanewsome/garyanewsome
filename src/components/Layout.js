@@ -1,12 +1,9 @@
 import React from 'react'
 
-import '../assets/css/index.css'
+import layoutStyles from './layout.module.css'
 
-class Layout extends React.Component {
-  render() {
-    const { children } = this.props
-    return <div className="layout">{children}</div>
-  }
+const Layout = ({ children }) => {
+  return <div className={layoutStyles.layout}>{children}</div>
 }
 
 export default Layout
