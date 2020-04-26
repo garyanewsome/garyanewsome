@@ -7,36 +7,38 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  background-size: cover;
+  background: var(--light-text);
+  background: linear-gradient(180deg, var(--light-text) 70%, var(--light-ish-text) 100%);
+
   color: var(--theme);
 }
 
-.home-sub-headings {
+.subHeadings {
   color: var(--theme);
 }
 
-.home-link {
+.link {
   text-decoration: none;
   color: var(--theme);
   transition: color 1s ease;
 }
 
-.iw-link:hover {
+.iwLink:hover {
   color: var(--iw);
   text-decoration: none;
 }
 
-.savvy-link:hover {
+.savvyLink:hover {
   color: var(--savvy);
   text-decoration: none;
 }
 
-.phalcon-link:hover {
+.phalconLink:hover {
   color: var(--phalcon);
   text-decoration: none;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) {
   .home {
     font-size: 1.5em;
   }

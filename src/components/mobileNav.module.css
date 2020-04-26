@@ -1,0 +1,60 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobileNav {
+  z-index: 500;
+  padding-top: 4em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--dark-text);
+  color: var(--light-text);
+  font-size: 2em;
+  animation: fade 0.7s ease forwards;
+}
+
+.link {
+  padding-bottom: 1em;
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--light-ish-text);
+  text-decoration: underline;
+}
+
+.socialRow {
+  padding-top: 1em;
+  width: 100%;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 4px solid var(--light-ish-text);
+}
+
+.smIcon {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  height: 1.5em;
+}
