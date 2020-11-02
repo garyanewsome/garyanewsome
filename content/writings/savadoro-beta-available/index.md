@@ -1,12 +1,13 @@
 ---
-title: "Savadoro Beta Available"
-author: "Gary A. Newsome"
+title: 'Savadoro Beta Available'
+author: 'Gary A. Newsome'
 date: 2017-08-24T15:24:33-04:00
 draft: false
-tags: ["SavvySoftWorks", "Savadoro", "Electron", "Javascript"]
+postType: 'development'
+tags: ['SavvySoftWorks', 'Savadoro', 'Electron', 'Javascript']
 ---
 
-*Cross posted from [SavvySoftWorks](http://savvysoftworks.com).*
+_Cross posted from [SavvySoftWorks](http://savvysoftworks.com)._
 
 SavvySoftWorks, LLC is proud to announce the Savadoro timer.
 
@@ -20,8 +21,8 @@ The timer itself is free for you to try, and is available for download on GitHub
 
 Let us know what you think!
 
-__To note:__
+**To note:**
 
 On Windows, Savadoro installs correctly, but does not create a Start Menu item. You can find it via search and create your own desktop shortcut.
 
-*Sorry at this time we only have Mac and Windows versions available. Though Ubuntu will be coming soon!*
+_Sorry at this time we only have Mac and Windows versions available. Though Ubuntu will be coming soon!_

@@ -7,9 +7,10 @@ import 'typeface-raleway'
 
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
-import Header from '../components/Header'
-import Home from '../components/Home/Home'
 import Nav from '../components/Nav'
+import Header from '../components/Header'
+import Music from '../components/Music/Music'
+import Contact from '../components/Contact'
 
 import '../assets/css/index.css'
 
@@ -18,10 +19,11 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Homepage" />
+      <SEO title="Music" />
+      <Header location={location} showName={true} theme="dark" color="#0f001a" />
       <Nav location={location} theme="dark" />
-      <Header location={location} showName={false} theme="transparent" color="transparent" />
-      <Home />
+      <Music />
+      <Contact page="music" theme="dark" size={40} showAll={false} />
     </Layout>
   )
 }

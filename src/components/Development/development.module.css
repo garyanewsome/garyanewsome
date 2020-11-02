@@ -1,0 +1,72 @@
+@keyframes enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.development {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem 5% 128px;
+  line-height: 2.4em;
+  text-align: left;
+  background-color: var(--light-backgroound-color);
+  color: var(--light-text-color);
+  animation: enter 0.5s ease forwards;
+  overflow: scroll;
+}
+
+.heading {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.subheadings {
+  margin-bottom: 8px;
+  font-size: 1.75rem;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.link {
+  transition: color 1s ease;
+}
+
+.link:hover {
+  color: var(--theme-hover);
+}
+
+.linkStandard {
+  color: var(--light-text-color);
+}
+
+.linkLight {
+  font-size: 1.25rem;
+  transition: color 1s ease;
+  color: var(--light-text-color-light);
+}
+
+.iwLink:hover {
+  color: var(--iw);
+}
+
+.savvyLink {
+  transition: color 1s ease;
+  color: var(--light-text-color);
+}
+.savvyLink:hover {
+  cursor: not-allowed;
+  color: var(--savvy);
+}

@@ -3,6 +3,7 @@ title: 'Setting Up Phalcon PHPs Docs'
 author: 'Gary A. Newsome'
 date: 2017-09-10T15:29:15-04:00
 draft: false
+postType: 'development'
 tags: ['PhalconPHP', 'PHP', 'Open Source']
 ---
 
