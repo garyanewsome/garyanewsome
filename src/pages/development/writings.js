@@ -3,9 +3,9 @@ import { Link, graphql } from 'gatsby'
 
 import writingsStyles from './writings.module.css'
 
-import Header from '../components/Header'
-import Layout from '../components/Layout'
-import SEO from '../components/SEO'
+import Header from '../../components/Header'
+import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
 
 const WritingIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -19,7 +19,11 @@ const WritingIndex = ({ data, location }) => {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <Link className={writingsStyles.block} to={node.fields.slug} key={node.fields.slug}>
+            <Link
+              className={writingsStyles.block}
+              to={`/development/writings${node.fields.slug}`}
+              key={node.fields.slug}
+            >
               <div className={writingsStyles.writings}>
                 <h3 className={writingsStyles.title}>{title}</h3>
                 <p className={writingsStyles.date}>{node.frontmatter.date}</p>
@@ -43,7 +47,11 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 1000
+      filter: { fileAbsolutePath: { regex: "development/writings/.*\\\\.md$/" } }
+    ) {
       edges {
         node {
           excerpt

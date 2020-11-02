@@ -1,0 +1,113 @@
+@keyframes enter {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  font-family: crushed, sans-serif;
+  font-size: 6vw;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.homeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(90deg, #51229c 25%, #000000 50%, #429ea6 75%); */
+  background: linear-gradient(90deg, rgba(34, 97, 156, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(120, 19, 146, 0.9) 100%);
+}
+
+.homeContent h1,
+.homeContent h2,
+.homeContent h3 {
+  transform: translateX(200%);
+  animation: enter 1s ease forwards;
+}
+
+.homeContent h2 {
+  animation-delay: 0.25s;
+}
+
+.homeContent h3 {
+  animation-delay: 0.5s;
+}
+
+.buttonRowHorizontal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonRowVertical {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 6vw;
+}
+
+.buttonRowHorizontal .linkButton {
+  width: 40%;
+}
+
+.buttonRowVertical .linkButton {
+  width: 70%;
+}
+
+.linkButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 8px 0;
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: var(--theme);
+  transition: all 1s ease;
+  opacity: 0;
+  animation: fade 3s ease forwards;
+}
+
+.linkButton:hover {
+  box-shadow: 2px 2px 4px #ffffff, inset 0 0 8px #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 769px) {
+  .home {
+    font-size: 4vw;
+  }
+}

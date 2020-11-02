@@ -1,9 +1,16 @@
 @import './default.css';
 
 :root {
-  --dark-text: hsl(276, 100%, 5%);
-  --dark-text-hover: hsl(276, 75%, 10%);
-  --theme: hsl(270, 73%, 30%);
+  --light-background-color: #fdfdfd;
+  --light-text-color: #343434;
+  --light-text-color-light: #666666;
+
+  --dark-background-color: #0f001a;
+  --dark-text-color: #ffffff;
+
+  --dark-text: #0f001a;
+  --dark-text-hover: #1d062d;
+  --theme: #4d1584;
   --theme-hover: hsl(270, 44%, 55%);
   --light-text: hsl(0, 0%, 98%);
   --light-ish-text: hsl(0, 0%, 77%);

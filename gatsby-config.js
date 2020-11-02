@@ -3,9 +3,9 @@ module.exports = {
     title: `Gary A. Newsome`,
     author: {
       name: `Gary A. Newsome`,
-      summary: `Developer, musician, artist, creative type being.`,
+      summary: `Developer, musician, creative type being.`,
     },
-    description: `Developer, musician, artist, creative type being.`,
+    description: `Developer, musician, creative type being.`,
     siteUrl: 'https://www.garyanewsome.com/',
     social: {
       twitter: `garyanewsome`,
@@ -23,8 +23,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/releases`,
+        name: `releases`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/images/releases`,
+        name: `releaseImages`,
       },
     },
     {
