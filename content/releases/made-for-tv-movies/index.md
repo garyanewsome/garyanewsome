@@ -6,7 +6,7 @@ releaseDate: 2020
 draft: false
 postType: 'release'
 albumType: 'EP'
-coverImg: 'made-for-tv-movies'
+coverImg: 'made_for_tv_movies'
 tags: ['Music', 'Instrumental', 'Alternative Rock']
 ---
 
