@@ -11,7 +11,7 @@
   position: absolute;
   top: 65px;
   left: 0;
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -20,10 +20,18 @@
   padding: 2rem 5% 128px;
   line-height: 2.4em;
   text-align: left;
-  background-color: var(--light-backgroound-color);
+  background-color: var(--light-background-color);
   color: var(--light-text-color);
   animation: enter 0.5s ease forwards;
   overflow: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.development::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
 }
 
 .heading {
@@ -42,10 +50,15 @@
 
 .link {
   transition: color 1s ease;
+  color: var(--light-text-color);
 }
 
 .link:hover {
   color: var(--theme-hover);
+}
+
+.link:visited {
+  color: var(--light-text-color);
 }
 
 .linkStandard {
@@ -58,14 +71,15 @@
   color: var(--light-text-color-light);
 }
 
+.rnpLink:hover {
+  transition: color 1s ease;
+  color: var(--rnpRed);
+}
+
 .iwLink:hover {
   color: var(--iw);
 }
 
-.savvyLink {
-  transition: color 1s ease;
-  color: var(--light-text-color);
-}
 .savvyLink:hover {
   cursor: not-allowed;
   color: var(--savvy);

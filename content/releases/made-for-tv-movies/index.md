@@ -7,6 +7,7 @@ draft: false
 postType: 'release'
 albumType: 'EP'
 coverImg: 'made_for_tv_movies'
+tracks: ['AF', 'Hypnotik', 'Virginia Zombie', 'Aviatrix', 'inkuknow1', 'Endless Screaming']
 tags: ['Music', 'Instrumental', 'Alternative Rock']
 ---
 

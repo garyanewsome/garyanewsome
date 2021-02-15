@@ -12,6 +12,18 @@ const Development = ({ height }) => {
           Developer at
           <br />
           <a
+            href="https://www.robotsandpencils.com/"
+            className={[developmentStyles.rnpLink, developmentStyles.link].join(' ')}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Robots & Pencils
+          </a>
+        </div>
+        <div className={developmentStyles.subheadings}>
+          Formerly,
+          <br />
+          <a
             href="https://www.industryweapon.com/"
             className={[developmentStyles.iwLink, developmentStyles.link].join(' ')}
             rel="noopener noreferrer"
@@ -19,9 +31,6 @@ const Development = ({ height }) => {
           >
             Industry Weapon
           </a>
-        </div>
-        <div className={developmentStyles.subheadings}>
-          Formerly,
           <br />
           <span className={developmentStyles.savvyLink}>SavvySoftWorks, LLC</span>
         </div>

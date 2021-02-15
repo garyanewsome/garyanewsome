@@ -7,7 +7,15 @@
   padding: 2rem 5%;
   background-color: var(--dark-background-color);
   color: var(--dark-text-color);
+
   overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
 }
 
 .block {
@@ -61,4 +69,17 @@ a.block:hover {
 .link:hover {
   color: var(--light-text-color-text);
   text-decoration: underline;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
 }

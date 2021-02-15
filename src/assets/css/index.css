@@ -11,18 +11,19 @@
   --dark-text: #0f001a;
   --dark-text-hover: #1d062d;
   --theme: #4d1584;
-  --theme-hover: hsl(270, 44%, 55%);
-  --light-text: hsl(0, 0%, 98%);
-  --light-ish-text: hsl(0, 0%, 77%);
+  --theme-hover: #8c5abf;
+  --light-ish-text: #c4c4c4;
 
-  --code-bkg: hsla(180, 100%, 40%, 0.5);
+  --code-bkg: #00cccc80;
 
-  --hover: hsl(180, 100%, 40%);
+  --hover: #00cccc;
 
-  --iw: hsl(343.3, 81.4%, 51.6%);
-  --savvy: hsl(206, 53%, 51%);
-  --savadoro: hsl(206, 52%, 31%);
-  --phalcon: hsl(142, 54%, 62%);
+  --rnpBlue: #232944;
+  --rnpRed: #bf2932;
+  --iw: #e81f57;
+  --savvy: #408bc4;
+  --savadoro: rgb(38, 85, 120);
+  --phalcon: rgb(106, 210, 144);
 }
 
 html,
