@@ -37,7 +37,7 @@ const Development = ({ height }) => {
         <div>Open Source Contributor</div>
         <div>
           <a
-            href="https://github.com/garyanewsome/me/blob/main/Gary%20A.%20Newsome%20Resume%202020.pdf"
+            href="https://github.com/garyanewsome/me/blob/main/Gary%20A.%20Newsome%20Resume%202021.pdf"
             className={[developmentStyles.link, developmentStyles.linkLight].join(' ')}
             rel="noopener noreferrer"
             target="_blank"
